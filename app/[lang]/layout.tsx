@@ -33,6 +33,13 @@ export async function generateMetadata({
     title: dict.metadata.title,
     description: dict.metadata.description,
     keywords: ["web hosting", "cloud hosting", "VPS", "domain", "zapia"],
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
+        { url: "/icon.svg", type: "image/svg+xml" },
+      ],
+      apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
+    },
   };
 }
 
