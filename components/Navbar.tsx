@@ -72,12 +72,6 @@ export default function Navbar({ t, lang }: Props) {
               {otherLang}
             </Link>
             <a
-              href="#"
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
-            >
-              {t.signin}
-            </a>
-            <a
               href="#pricing"
               className="text-sm font-semibold px-4 py-2 rounded-lg gradient-bg text-white hover:opacity-90 transition-opacity"
             >
@@ -141,12 +135,6 @@ export default function Navbar({ t, lang }: Props) {
             >
               {otherLang === "en" ? "🇬🇧 English" : "🇫🇷 Français"}
             </Link>
-            <a
-              href="#"
-              className="px-4 py-3 rounded-xl text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-colors"
-            >
-              {t.signin}
-            </a>
             <a
               href="#pricing"
               onClick={() => setOpen(false)}
