@@ -26,7 +26,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <FAQ t={dict.faq} />
         <CTA t={dict.cta} />
       </main>
-      <Footer t={dict.footer} />
+      <Footer t={dict.footer} lang={lang} />
     </>
   );
 }

@@ -79,8 +79,8 @@ export default function Hero({ t }: Props) {
           {[
             { value: "99.9%", label: t.stat_uptime },
             { value: "<20ms", label: t.stat_response },
-            { value: "150K+", label: t.stat_websites },
-            { value: "24/7", label: t.stat_support },
+            { value: "A+", label: t.stat_websites },
+            { value: "<2h", label: t.stat_support },
           ].map((stat) => (
             <div
               key={stat.label}

@@ -22,7 +22,7 @@ export default async function Home() {
         <FAQ t={dict.faq} />
         <CTA t={dict.cta} />
       </main>
-      <Footer t={dict.footer} />
+      <Footer t={dict.footer} lang="fr" />
     </>
   );
 }

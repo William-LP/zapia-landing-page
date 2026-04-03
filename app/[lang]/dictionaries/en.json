@@ -22,7 +22,7 @@
     "trust_moneyback": "30-day money-back guarantee",
     "stat_uptime": "Uptime SLA",
     "stat_response": "Avg. response time",
-    "stat_websites": "Websites hosted",
+    "stat_websites": "Security grade",
     "stat_support": "Expert support"
   },
   "features": {
@@ -171,7 +171,7 @@
   "cta": {
     "headline": "Ready to launch?",
     "headline_highlight": "Your site deserves better.",
-    "sub": "Join 150,000+ websites already running on Zapia. Set up takes under 5 minutes — seriously.",
+    "sub": "Your brand website, designed, built, and managed by our experts — live in under a week.",
     "button": "Start hosting today",
     "trust_moneyback": "30-day money-back guarantee"
   },
@@ -179,30 +179,15 @@
     "tagline": "Fast, reliable hosting for everyone. From personal blogs to high-traffic stores.",
     "categories": {
       "Product": "Product",
-      "Resources": "Resources",
       "Company": "Company",
       "Legal": "Legal"
     },
     "links": {
       "Product": [
         "Features",
-        "Pricing",
-        "Changelog",
-        "Roadmap",
-        "Status"
-      ],
-      "Resources": [
-        "Documentation",
-        "Blog",
-        "Migration guide",
-        "API reference",
-        "Community"
+        "Pricing"
       ],
       "Company": [
-        "About",
-        "Careers",
-        "Press",
-        "Partners",
         "Contact"
       ],
       "Legal": [
