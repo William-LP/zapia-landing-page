@@ -22,6 +22,12 @@ export function proxy(request: NextRequest) {
 
   if (pathnameHasLocale) return;
 
+  // Serve French at the root without a redirect (URL stays as /)
+  if (pathname === "/") {
+    request.nextUrl.pathname = "/fr";
+    return NextResponse.rewrite(request.nextUrl);
+  }
+
   const locale = getLocale(request);
   request.nextUrl.pathname = `/${locale}${pathname}`;
   return NextResponse.redirect(request.nextUrl);
