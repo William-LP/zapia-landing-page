@@ -16,7 +16,7 @@ export default function Navbar({ t, lang }: Props) {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const otherLang = lang === "en" ? "fr" : "en";
-  const otherPath = pathname.replace(`/${lang}`, `/${otherLang}`);
+  const otherPath = pathname === "/" ? `/${otherLang}` : pathname.replace(`/${lang}`, `/${otherLang}`);
 
   const navLinks = [
     { label: t.features, href: "#features" },
