@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "title": "Zapia — L'hébergement web simplifié",
+    "description": "Hébergement web rapide, fiable et abordable pour tous. Lancez votre site dès aujourd'hui avec la plateforme d'hébergement puissante de Zapia."
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "performance": "Performance",
+    "faq": "FAQ",
+    "signin": "Connexion",
+    "getstarted": "Commencer"
+  },
+  "hero": {
+    "badge": "Hébergement NVMe SSD ultra-rapide",
+    "headline": "L'hébergement qui ne",
+    "headline_highlight": "vous ralentit jamais",
+    "headline_end": "",
+    "sub": "Déployez votre site en quelques secondes. Bande passante illimitée, sauvegardes automatiques et support expert — tout en un seul endroit. Sans frais cachés.",
+    "cta_primary": "Démarrer gratuitement",
+    "cta_secondary": "Voir toutes les fonctionnalités",
+    "trust_moneyback": "Satisfait ou remboursé 30 jours",
+    "stat_uptime": "SLA de disponibilité",
+    "stat_response": "Temps de réponse moyen",
+    "stat_websites": "Sites hébergés",
+    "stat_support": "Support expert"
+  },
+  "features": {
+    "badge": "Tout ce dont vous avez besoin",
+    "headline": "Un hébergement qui travaille",
+    "headline_highlight": "aussi dur que vous",
+    "sub": "Chaque offre est livrée avec des fonctionnalités professionnelles — sans modules complémentaires, sans mauvaises surprises sur votre facture.",
+    "items": [
+      {
+        "title": "NVMe SSD ultra-rapide",
+        "description": "Jusqu'à 20x plus rapide que les disques durs traditionnels. Vos visiteurs bénéficient de chargements en moins d'une seconde à chaque fois."
+      },
+      {
+        "title": "CDN mondial",
+        "description": "Votre contenu servi depuis plus de 30 points de présence dans le monde. Une livraison plus rapide, où que soit votre audience."
+      },
+      {
+        "title": "Certificats SSL gratuits",
+        "description": "SSL Let's Encrypt à renouvellement automatique sur chaque domaine. HTTPS activé par défaut — sans étape supplémentaire."
+      },
+      {
+        "title": "Sauvegardes quotidiennes",
+        "description": "Instantanés automatiques conservés 30 jours. Restaurez votre site en un clic en cas de problème."
+      },
+      {
+        "title": "Bases de données illimitées",
+        "description": "MySQL, MariaDB et PostgreSQL sans limite sur le nombre de bases. Faites évoluer vos données à votre rythme."
+      },
+      {
+        "title": "Protection DDoS",
+        "description": "Atténuation DDoS de niveau entreprise intégrée. Votre site reste en ligne même sous une attaque intensive."
+      },
+      {
+        "title": "Analytique en temps réel",
+        "description": "Analytique de trafic intégrée — suivez les visiteurs, la bande passante et les performances sans outils tiers."
+      },
+      {
+        "title": "Support expert",
+        "description": "De vraies personnes, pas des robots. Nos experts en hébergement sont disponibles via chat en direct et ticket quand vous en avez besoin."
+      }
+    ]
+  },
+  "performance": {
+    "badge": "La performance avant tout",
+    "headline": "La vitesse n'est pas une option —",
+    "headline_highlight": "c'est notre standard",
+    "sub": "Chaque serveur de notre flotte fonctionne sur NVMe SSD d'entreprise, connecté à un réseau 10 Gbps. Votre site WordPress, Node.js ou statique se charge en millisecondes, pas en secondes.",
+    "bullets": [
+      "Cœurs CPU dédiés sur tous les plans Pro et Business",
+      "Support des protocoles HTTP/3 et QUIC par défaut",
+      "Cache objet intégré avec Redis",
+      "Compression Brotli pour tous les fichiers statiques"
+    ],
+    "metrics": [
+      {
+        "label": "TTFB moyen",
+        "description": "Temps jusqu'au premier octet — le plus rapide de sa catégorie"
+      },
+      {
+        "label": "Disponibilité (12 derniers mois)",
+        "description": "Mesurée sur toutes les régions et tous les plans"
+      },
+      {
+        "label": "Technologie de stockage",
+        "description": "Disques de pointe, 20× plus rapides que les SSD SATA"
+      },
+      {
+        "label": "Points de présence",
+        "description": "Nœuds CDN mondiaux pour une diffusion à faible latence"
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Tarification simple",
+    "headline": "Payez ce dont vous avez besoin,",
+    "headline_highlight": "rien de plus",
+    "sub": "Garantie satisfait ou remboursé 30 jours. Sans engagement, résiliez à tout moment.",
+    "toggle_monthly": "Mensuel",
+    "toggle_annual": "Annuel",
+    "badge_savings": "2 mois offerts",
+    "plan_annual_title": "Offre annuelle",
+    "plan_annual_desc": "Un seul paiement, deux mois offerts.",
+    "plan_monthly_title": "Offre mensuelle",
+    "plan_monthly_desc": "Facturation mensuelle flexible.",
+    "savings_note": "Soit 8,25 €/mois — économisez 20,88 € vs mensuel",
+    "cta": "Commencer",
+    "features": [
+      "Accès complet à toutes les fonctionnalités",
+      "Bande passante illimitée",
+      "Certificat SSL gratuit",
+      "Sauvegardes quotidiennes"
+    ],
+    "footer_text": "Besoin de plus ?",
+    "footer_link": "Parlez-nous de serveurs dédiés →",
+    "custom_title": "Site web sur mesure",
+    "custom_desc": "Nous concevons et développons votre site — de l'idée à la mise en ligne.",
+    "custom_price": "Prix selon projet",
+    "custom_sub": "Adapté à la portée et aux besoins de votre projet.",
+    "custom_features": [
+      "Design & développement professionnel",
+      "Mobile-first, entièrement responsive",
+      "Optimisé SEO dès le départ",
+      "Hébergement inclus (Zapia Pro)",
+      "Support 30 jours après le lancement"
+    ],
+    "custom_cta": "Demander un devis gratuit",
+    "custom_badge": "Clé en main"
+  },
+  "faq": {
+    "badge": "Des questions ?",
+    "headline": "Questions",
+    "headline_highlight": "fréquentes",
+    "items": [
+      {
+        "q": "Puis-je migrer mon site existant vers Zapia gratuitement ?",
+        "a": "Oui ! Notre équipe de migration prend en charge le transfert complet — fichiers, bases de données, e-mails et DNS — sans frais supplémentaires. La plupart des migrations sont effectuées en 24 heures sans interruption de service."
+      },
+      {
+        "q": "Que se passe-t-il si je dépasse ma limite de stockage ?",
+        "a": "Nous vous informons par e-mail avant que vous atteigniez le plafond, vous laissant le temps de passer à une offre supérieure. Nous ne suspendons jamais votre compte sans avertissement préalable."
+      },
+      {
+        "q": "Prenez-vous en charge Node.js, Python ou Ruby ?",
+        "a": "Oui. Tous les plans prennent en charge Node.js, Python (avec virtualenv), Ruby et PHP. Le plan Business inclut également Docker et la prise en charge de runtimes personnalisés."
+      },
+      {
+        "q": "La garantie de remboursement est-elle vraiment sans condition ?",
+        "a": "Absolument. Dans les 30 jours, envoyez simplement un e-mail à notre support et nous vous rembourserons intégralement. Aucune contrainte, aucune interrogatoire."
+      },
+      {
+        "q": "Puis-je héberger plusieurs domaines sur un seul plan ?",
+        "a": "Le plan Starter inclut 1 site. Les plans Pro et Business incluent des sites et des domaines illimités — tous gérés depuis un tableau de bord unique."
+      },
+      {
+        "q": "Comment les sauvegardes sont-elles gérées ?",
+        "a": "Nous effectuons des instantanés quotidiens automatiques stockés dans des emplacements géographiquement redondants. Starter conserve 7 jours, Pro 30 jours, Business 60 jours. La restauration se fait en un clic depuis votre panneau de contrôle."
+      },
+      {
+        "q": "Proposez-vous un essai gratuit ?",
+        "a": "Nous ne proposons pas actuellement de période d'essai, mais notre garantie satisfait ou remboursé de 30 jours vous offre la même protection — testez Zapia sans risque et demandez un remboursement si ce n'est pas la solution qu'il vous faut."
+      }
+    ],
+    "footer_text": "Vous avez encore des questions ?",
+    "footer_link": "Discutez avec notre équipe →"
+  },
+  "cta": {
+    "headline": "Prêt à lancer ?",
+    "headline_highlight": "Votre site mérite mieux.",
+    "sub": "Rejoignez plus de 150 000 sites déjà hébergés sur Zapia. La mise en place prend moins de 5 minutes — vraiment.",
+    "button": "Héberger mon site aujourd'hui",
+    "trust_moneyback": "Satisfait ou remboursé 30 jours",
+    "trust_cancel": "Résiliation à tout moment"
+  },
+  "footer": {
+    "tagline": "Hébergement rapide et fiable pour tous. Des blogs personnels aux boutiques à fort trafic.",
+    "categories": {
+      "Product": "Produit",
+      "Resources": "Ressources",
+      "Company": "Entreprise",
+      "Legal": "Mentions légales"
+    },
+    "links": {
+      "Product": ["Fonctionnalités", "Tarifs", "Nouveautés", "Feuille de route", "État des services"],
+      "Resources": ["Documentation", "Blog", "Guide de migration", "Référence API", "Communauté"],
+      "Company": ["À propos", "Recrutement", "Presse", "Partenaires", "Contact"],
+      "Legal": ["Politique de confidentialité", "Conditions d'utilisation", "Politique des cookies", "RGPD"]
+    },
+    "copyright": "Tous droits réservés.",
+    "status": "Tous les systèmes opérationnels"
+  }
+}

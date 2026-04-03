@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "title": "Zapia — Web Hosting Made Simple",
+    "description": "Fast, reliable, and affordable web hosting for everyone. Launch your website today with Zapia's powerful hosting platform."
+  },
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "performance": "Performance",
+    "faq": "FAQ",
+    "signin": "Sign in",
+    "getstarted": "Get started"
+  },
+  "hero": {
+    "badge": "Blazing-fast NVMe SSD hosting",
+    "headline": "The hosting that",
+    "headline_highlight": "never slows",
+    "headline_end": "you down",
+    "sub": "Deploy your website in seconds. Unlimited bandwidth, automatic backups, and expert support — all in one place. No hidden fees, ever.",
+    "cta_primary": "Start for free",
+    "cta_secondary": "See all features",
+    "trust_moneyback": "30-day money-back guarantee",
+    "stat_uptime": "Uptime SLA",
+    "stat_response": "Avg. response time",
+    "stat_websites": "Websites hosted",
+    "stat_support": "Expert support"
+  },
+  "features": {
+    "badge": "Everything you need",
+    "headline": "Hosting that works",
+    "headline_highlight": "as hard as you do",
+    "sub": "Every plan comes packed with professional-grade features — no add-ons required, no surprises on your bill.",
+    "items": [
+      {
+        "title": "Lightning-Fast NVMe SSD",
+        "description": "Up to 20x faster than traditional hard drives. Your visitors get sub-second page loads every time."
+      },
+      {
+        "title": "Global CDN",
+        "description": "Your content served from 30+ edge locations worldwide. Faster delivery no matter where your audience is."
+      },
+      {
+        "title": "Free SSL Certificates",
+        "description": "Auto-renewing Let's Encrypt SSL on every domain. HTTPS is enabled by default — no extra steps."
+      },
+      {
+        "title": "Daily Backups",
+        "description": "Automatic daily snapshots kept for 30 days. Restore your entire site in one click if anything goes wrong."
+      },
+      {
+        "title": "Unlimited Databases",
+        "description": "MySQL, MariaDB, and PostgreSQL with no cap on the number of databases. Scale your data however you need."
+      },
+      {
+        "title": "DDoS Protection",
+        "description": "Enterprise-grade DDoS mitigation built in. Your site stays online even under heavy attack."
+      },
+      {
+        "title": "Real-Time Analytics",
+        "description": "Built-in traffic analytics — track visitors, bandwidth, and performance without third-party tools."
+      },
+      {
+        "title": "Expert Support",
+        "description": "Real humans, not bots. Our hosting experts are available via live chat and ticket whenever you need them."
+      }
+    ]
+  },
+  "performance": {
+    "badge": "Performance first",
+    "headline": "Speed is not a feature —",
+    "headline_highlight": "it's our baseline",
+    "sub": "Every server in our fleet runs on enterprise NVMe SSD, connected to a 10 Gbps network fabric. Your WordPress, Node.js, or static site loads in milliseconds, not seconds.",
+    "bullets": [
+      "Dedicated CPU cores on all Pro and Business plans",
+      "HTTP/3 and QUIC protocol support by default",
+      "Built-in object cache with Redis",
+      "Brotli compression for all static assets"
+    ],
+    "metrics": [
+      {
+        "label": "Average TTFB",
+        "description": "Time to first byte — the fastest in its class"
+      },
+      {
+        "label": "Uptime (last 12 months)",
+        "description": "Measured across all regions and plans"
+      },
+      {
+        "label": "Storage technology",
+        "description": "Cutting-edge drives, 20× faster than SATA SSD"
+      },
+      {
+        "label": "Edge locations",
+        "description": "Global CDN nodes for low-latency delivery"
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Simple pricing",
+    "headline": "Pay for what you need,",
+    "headline_highlight": "nothing more",
+    "sub": "30-day money-back guarantee. No contracts, cancel anytime.",
+    "toggle_monthly": "Monthly",
+    "toggle_annual": "Annual",
+    "badge_savings": "2 months free",
+    "plan_annual_title": "Annual plan",
+    "plan_annual_desc": "One payment, two months free.",
+    "plan_monthly_title": "Monthly plan",
+    "plan_monthly_desc": "Flexible month-to-month billing.",
+    "savings_note": "That's 8.25€/month — save 20.88€ vs monthly",
+    "cta": "Get started",
+    "features": [
+      "Full access to all features",
+      "Unlimited bandwidth",
+      "Free SSL certificate",
+      "Daily backups"
+    ],
+    "footer_text": "Need something bigger?",
+    "footer_link": "Talk to us about dedicated servers →",
+    "custom_title": "Custom Website",
+    "custom_desc": "We design and build your website for you — from concept to launch.",
+    "custom_price": "Custom pricing",
+    "custom_sub": "Tailored to your project's scope and requirements.",
+    "custom_features": [
+      "Professional design & development",
+      "Mobile-first, fully responsive",
+      "SEO-optimised from day one",
+      "Hosting included (Zapia Pro)",
+      "30-day post-launch support"
+    ],
+    "custom_cta": "Get a free quote",
+    "custom_badge": "Done for you"
+  },
+  "faq": {
+    "badge": "Got questions?",
+    "headline": "Frequently asked",
+    "headline_highlight": "questions",
+    "items": [
+      {
+        "q": "Can I migrate my existing website to Zapia for free?",
+        "a": "Yes! Our migration team handles the full transfer — files, databases, emails, and DNS — at no extra cost. Most migrations complete within 24 hours with zero downtime."
+      },
+      {
+        "q": "What happens if I exceed my storage limit?",
+        "a": "We'll notify you by email before you hit the cap, giving you time to upgrade. We never suddenly suspend your account for storage — you always get a warning first."
+      },
+      {
+        "q": "Do you support Node.js, Python, or Ruby apps?",
+        "a": "Yes. All plans support Node.js, Python (with virtualenv), Ruby, and PHP. The Business plan also includes Docker and custom runtime support."
+      },
+      {
+        "q": "Is the money-back guarantee really no questions asked?",
+        "a": "Absolutely. Within 30 days, just email our support and we'll issue a full refund. No hoops, no interrogation."
+      },
+      {
+        "q": "Can I host multiple domains on one plan?",
+        "a": "The Starter plan includes 1 website. Pro and Business plans include unlimited websites and domains — all managed from a single dashboard."
+      },
+      {
+        "q": "How are backups handled?",
+        "a": "We take automated daily snapshots stored in geographically redundant locations. Starter keeps 7 days of backups, Pro keeps 30, and Business keeps 60. Restores are one click from your control panel."
+      },
+      {
+        "q": "Do you offer a free trial?",
+        "a": "We don't currently offer a trial period, but our 30-day money-back guarantee gives you the same protection — try Zapia risk-free and request a refund if it's not the right fit."
+      }
+    ],
+    "footer_text": "Still have questions?",
+    "footer_link": "Chat with our team →"
+  },
+  "cta": {
+    "headline": "Ready to launch?",
+    "headline_highlight": "Your site deserves better.",
+    "sub": "Join 150,000+ websites already running on Zapia. Set up takes under 5 minutes — seriously.",
+    "button": "Start hosting today",
+    "trust_moneyback": "30-day money-back guarantee",
+    "trust_cancel": "Cancel anytime"
+  },
+  "footer": {
+    "tagline": "Fast, reliable hosting for everyone. From personal blogs to high-traffic stores.",
+    "categories": {
+      "Product": "Product",
+      "Resources": "Resources",
+      "Company": "Company",
+      "Legal": "Legal"
+    },
+    "links": {
+      "Product": ["Features", "Pricing", "Changelog", "Roadmap", "Status"],
+      "Resources": ["Documentation", "Blog", "Migration guide", "API reference", "Community"],
+      "Company": ["About", "Careers", "Press", "Partners", "Contact"],
+      "Legal": ["Privacy policy", "Terms of service", "Cookie policy", "GDPR"]
+    },
+    "copyright": "All rights reserved.",
+    "status": "All systems operational"
+  }
+}
