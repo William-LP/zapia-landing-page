@@ -174,7 +174,6 @@
     "sub": "Rejoignez plus de 150 000 sites déjà hébergés sur Zapia. La mise en place prend moins de 5 minutes — vraiment.",
     "button": "Héberger mon site aujourd'hui",
     "trust_moneyback": "Satisfait ou remboursé 30 jours",
-    "trust_cancel": "Résiliation à tout moment"
   },
   "footer": {
     "tagline": "Hébergement rapide et fiable pour tous. Des blogs personnels aux boutiques à fort trafic.",
@@ -185,10 +184,33 @@
       "Legal": "Mentions légales"
     },
     "links": {
-      "Product": ["Fonctionnalités", "Tarifs", "Nouveautés", "Feuille de route", "État des services"],
-      "Resources": ["Documentation", "Blog", "Guide de migration", "Référence API", "Communauté"],
-      "Company": ["À propos", "Recrutement", "Presse", "Partenaires", "Contact"],
-      "Legal": ["Politique de confidentialité", "Conditions d'utilisation", "Politique des cookies", "RGPD"]
+      "Product": [
+        "Fonctionnalités",
+        "Tarifs",
+        "Nouveautés",
+        "Feuille de route",
+        "État des services"
+      ],
+      "Resources": [
+        "Documentation",
+        "Blog",
+        "Guide de migration",
+        "Référence API",
+        "Communauté"
+      ],
+      "Company": [
+        "À propos",
+        "Recrutement",
+        "Presse",
+        "Partenaires",
+        "Contact"
+      ],
+      "Legal": [
+        "Politique de confidentialité",
+        "Conditions d'utilisation",
+        "Politique des cookies",
+        "RGPD"
+      ]
     },
     "copyright": "Tous droits réservés.",
     "status": "Tous les systèmes opérationnels"

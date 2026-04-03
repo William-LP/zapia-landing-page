@@ -174,7 +174,6 @@
     "sub": "Join 150,000+ websites already running on Zapia. Set up takes under 5 minutes — seriously.",
     "button": "Start hosting today",
     "trust_moneyback": "30-day money-back guarantee",
-    "trust_cancel": "Cancel anytime"
   },
   "footer": {
     "tagline": "Fast, reliable hosting for everyone. From personal blogs to high-traffic stores.",
@@ -185,10 +184,33 @@
       "Legal": "Legal"
     },
     "links": {
-      "Product": ["Features", "Pricing", "Changelog", "Roadmap", "Status"],
-      "Resources": ["Documentation", "Blog", "Migration guide", "API reference", "Community"],
-      "Company": ["About", "Careers", "Press", "Partners", "Contact"],
-      "Legal": ["Privacy policy", "Terms of service", "Cookie policy", "GDPR"]
+      "Product": [
+        "Features",
+        "Pricing",
+        "Changelog",
+        "Roadmap",
+        "Status"
+      ],
+      "Resources": [
+        "Documentation",
+        "Blog",
+        "Migration guide",
+        "API reference",
+        "Community"
+      ],
+      "Company": [
+        "About",
+        "Careers",
+        "Press",
+        "Partners",
+        "Contact"
+      ],
+      "Legal": [
+        "Privacy policy",
+        "Terms of service",
+        "Cookie policy",
+        "GDPR"
+      ]
     },
     "copyright": "All rights reserved.",
     "status": "All systems operational"

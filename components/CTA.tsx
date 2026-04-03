@@ -37,10 +37,6 @@ export default function CTA({ t }: Props) {
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
             <span>{t.trust_moneyback}</span>
           </div>
-          <div className="flex items-center gap-1.5">
-            <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>{t.trust_cancel}</span>
-          </div>
         </div>
       </div>
     </section>
