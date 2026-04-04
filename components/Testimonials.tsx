@@ -13,7 +13,7 @@ const testimonials = [
     role: "Founder, ShopKarim",
     avatar: "KB",
     rating: 5,
-    text: "Our WooCommerce store handles Black Friday traffic without breaking a sweat. Page loads went from 3.2s to 0.7s after moving to Zapia Pro. That alone paid for itself in conversions.",
+    text: "Our WooCommerce store handles Black Friday traffic without breaking a sweat. Page loads went from 3.2s to 0.7s after moving to Zapia. That alone paid for itself in conversions.",
   },
   {
     name: "Priya Nair",
@@ -34,7 +34,7 @@ const testimonials = [
     role: "Digital agency owner",
     avatar: "AH",
     rating: 5,
-    text: "We run 60+ client sites on Zapia Business. The dashboard is clean, the uptime is real, and when something breaks (rarely), it gets fixed fast. Exactly what an agency needs.",
+    text: "We run 60+ client sites on Zapia. The dashboard is clean, the uptime is real, and when something breaks (rarely), it gets fixed fast. Exactly what an agency needs.",
   },
   {
     name: "Lucas Pereira",

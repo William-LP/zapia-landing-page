@@ -73,7 +73,7 @@
     "headline_highlight": "it's our baseline",
     "sub": "Every server in our fleet runs on enterprise NVMe SSD, connected to a 10 Gbps network fabric. Your website loads in milliseconds, not seconds.",
     "bullets": [
-      "Dedicated CPU cores on all Pro and Business plans",
+      "Dedicated CPU cores on all plans",
       "HTTP/3 and QUIC protocol support by default",
       "Built-in object cache with Redis",
       "Brotli compression for all static assets"
@@ -125,7 +125,7 @@
       "Professional design & development",
       "Mobile-first, fully responsive",
       "SEO-optimised from day one",
-      "Hosting included (Zapia Pro)",
+      "Hosting included",
       "Reliable support, 365 days a year"
     ],
     "custom_cta": "Get a free quote",
@@ -146,7 +146,7 @@
       },
       {
         "q": "Do you support Node.js, Python, or Ruby apps?",
-        "a": "Yes. All plans support Node.js, Python (with virtualenv), Ruby, and PHP. The Business plan also includes Docker and custom runtime support."
+        "a": "Yes. All plans support Node.js, Python (with virtualenv), Ruby, PHP, and Docker with custom runtime support."
       },
       {
         "q": "Is the money-back guarantee really no questions asked?",
@@ -154,11 +154,11 @@
       },
       {
         "q": "Can I host multiple domains on one plan?",
-        "a": "The Starter plan includes 1 website. Pro and Business plans include unlimited websites and domains — all managed from a single dashboard."
+        "a": "Your plan includes unlimited websites and domains — all managed from a single dashboard."
       },
       {
         "q": "How are backups handled?",
-        "a": "We take automated daily snapshots stored in geographically redundant locations. Starter keeps 7 days of backups, Pro keeps 30, and Business keeps 60. Restores are one click from your control panel."
+        "a": "We take automated daily snapshots stored in geographically redundant locations. Restores are one click from your control panel."
       },
       {
         "q": "Do you offer a free trial?",

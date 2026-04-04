@@ -84,7 +84,7 @@
     "headline_highlight": "c'est notre standard",
     "sub": "Chaque serveur de notre flotte fonctionne sur NVMe SSD d'entreprise, connecté à un réseau 10 Gbps. Votre site se charge en millisecondes, pas en secondes.",
     "bullets": [
-      "Cœurs CPU dédiés sur tous les plans Pro et Business",
+      "Cœurs CPU dédiés sur tous les plans",
       "Support des protocoles HTTP/3 et QUIC par défaut",
       "Cache objet intégré avec Redis",
       "Compression Brotli pour tous les fichiers statiques"
@@ -138,7 +138,7 @@
       "Design & développement professionnel",
       "Mobile-first, entièrement responsive",
       "Optimisé SEO dès le départ",
-      "Hébergement inclus (Zapia Pro)",
+      "Hébergement inclus",
       "Un support fiable, 365 jours par an"
     ],
     "custom_cta": "Demander un devis gratuit",
@@ -159,7 +159,7 @@
       },
       {
         "q": "Prenez-vous en charge Node.js, Python ou Ruby ?",
-        "a": "Oui. Tous les plans prennent en charge Node.js, Python (avec virtualenv), Ruby et PHP. Le plan Business inclut également Docker et la prise en charge de runtimes personnalisés."
+        "a": "Oui. Tous les plans prennent en charge Node.js, Python (avec virtualenv), Ruby, PHP, ainsi que Docker et les runtimes personnalisés."
       },
       {
         "q": "La garantie de remboursement est-elle vraiment sans condition ?",
@@ -167,11 +167,11 @@
       },
       {
         "q": "Puis-je héberger plusieurs domaines sur un seul plan ?",
-        "a": "Le plan Starter inclut 1 site. Les plans Pro et Business incluent des sites et des domaines illimités — tous gérés depuis un tableau de bord unique."
+        "a": "Votre plan inclut des sites et des domaines illimités — tous gérés depuis un tableau de bord unique."
       },
       {
         "q": "Comment les sauvegardes sont-elles gérées ?",
-        "a": "Nous effectuons des instantanés quotidiens automatiques stockés dans des emplacements géographiquement redondants. Starter conserve 7 jours, Pro 30 jours, Business 60 jours. La restauration se fait en un clic depuis votre panneau de contrôle."
+        "a": "Nous effectuons des instantanés quotidiens automatiques stockés dans des emplacements géographiquement redondants. La restauration se fait en un clic depuis votre panneau de contrôle."
       },
       {
         "q": "Proposez-vous un essai gratuit ?",
