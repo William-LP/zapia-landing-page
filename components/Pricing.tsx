@@ -136,12 +136,7 @@ export default function Pricing({ t }: Props) {
           </div>
         </div>
 
-        <p className="text-center text-sm text-slate-400 mt-10">
-          {t.footer_text}{" "}
-          <a href="#" className="text-indigo-600 font-medium hover:underline">
-            {t.footer_link}
-          </a>
-        </p>
+   
       </div>
     </section>
   );

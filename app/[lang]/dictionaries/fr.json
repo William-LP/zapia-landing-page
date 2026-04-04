@@ -128,6 +128,8 @@
       "Certificat SSL gratuit",
       "Sauvegardes quotidiennes"
     ],
+    "footer_text": "Besoin de plus ?",
+    "footer_link": "Parlez-nous de serveurs dédiés →",
     "custom_title": "Site web sur mesure",
     "custom_desc": "Nous concevons et développons votre site — de l'idée à la mise en ligne.",
     "custom_price": "Prix selon projet",
