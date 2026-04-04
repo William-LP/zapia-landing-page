@@ -20,6 +20,7 @@
     "cta_primary": "Start for free",
     "cta_secondary": "See all features",
     "trust_moneyback": "30-day money-back guarantee",
+    "trust_france": "Hosted in France · EU data sovereignty",
     "stat_uptime": "Uptime SLA",
     "stat_response": "Avg. response time",
     "stat_websites": "Security grade",
@@ -30,6 +31,23 @@
     "headline": "Hosting that works",
     "headline_highlight": "as hard as you do",
     "sub": "Every plan comes packed with professional-grade features — no add-ons required, no surprises on your bill.",
+    "france_strip": {
+      "label": "Made in France — built on French infrastructure, governed by French & EU law",
+      "items": [
+        {
+          "title": "Made in France",
+          "desc": "Designed, built, and operated by a French team. Every decision made here, for you."
+        },
+        {
+          "title": "French Servers",
+          "desc": "Your data is hosted exclusively in France — it never crosses EU borders."
+        },
+        {
+          "title": "Digital Sovereignty",
+          "desc": "Full GDPR compliance and French data protection law. You own your data, always."
+        }
+      ]
+    },
     "items": [
       {
         "title": "Lightning-Fast NVMe SSD",
@@ -173,7 +191,8 @@
     "headline_highlight": "Your site deserves better.",
     "sub": "Your brand website, designed, built, and managed by our experts — live in under a week.",
     "button": "Start hosting today",
-    "trust_moneyback": "30-day money-back guarantee"
+    "trust_moneyback": "30-day money-back guarantee",
+    "trust_france": "Hosted in France · EU data sovereignty"
   },
   "footer": {
     "tagline": "Fast, reliable hosting for everyone. From personal blogs to high-traffic stores.",

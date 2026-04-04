@@ -64,6 +64,22 @@ export default function Features({ t }: Props) {
             );
           })}
         </div>
+
+        {/* France sovereignty strip */}
+        <div className="mt-10 rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm">
+          <div className="flex items-center gap-3 px-6 py-4 border-b border-slate-100 bg-slate-50">
+            <span className="text-xl" aria-hidden>🇫🇷</span>
+            <p className="text-sm font-semibold text-slate-700">{t.france_strip.label}</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+            {t.france_strip.items.map((item) => (
+              <div key={item.title} className="px-6 py-5">
+                <p className="font-semibold text-slate-900 mb-1">{item.title}</p>
+                <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -20,6 +20,7 @@
     "cta_primary": "Démarrer gratuitement",
     "cta_secondary": "Voir toutes les fonctionnalités",
     "trust_moneyback": "Satisfait ou remboursé 30 jours",
+    "trust_france": "Hébergé en France · Souveraineté numérique européenne",
     "stat_uptime": "SLA de disponibilité",
     "stat_response": "Temps de réponse moyen",
     "stat_websites": "Note de sécurité",
@@ -30,6 +31,23 @@
     "headline": "Un hébergement qui travaille",
     "headline_highlight": "aussi dur que vous",
     "sub": "Chaque offre est livrée avec des fonctionnalités professionnelles — sans modules complémentaires, sans mauvaises surprises sur votre facture.",
+    "france_strip": {
+      "label": "Fait en France — hébergé sur infrastructure française, régi par le droit français et européen",
+      "items": [
+        {
+          "title": "Fait en France",
+          "desc": "Conçu, développé et opéré par une équipe française. Chaque décision prise ici, pour vous."
+        },
+        {
+          "title": "Serveurs en France",
+          "desc": "Vos données sont hébergées exclusivement en France — elles ne quittent jamais les frontières de l'UE."
+        },
+        {
+          "title": "Souveraineté numérique",
+          "desc": "Conformité RGPD totale et droit français à la protection des données. Vos données vous appartiennent, toujours."
+        }
+      ]
+    },
     "items": [
       {
         "title": "NVMe SSD ultra-rapide",
@@ -173,7 +191,8 @@
     "headline_highlight": "Votre site mérite mieux.",
     "sub": "Votre site de marque, conçu, développé et géré par nos experts — en ligne en moins d'une semaine.",
     "button": "Héberger mon site aujourd'hui",
-    "trust_moneyback": "Satisfait ou remboursé 30 jours"
+    "trust_moneyback": "Satisfait ou remboursé 30 jours",
+    "trust_france": "Hébergé en France · Souveraineté numérique européenne"
   },
   "footer": {
     "tagline": "Hébergement rapide et fiable pour tous. Des blogs personnels aux boutiques à fort trafic.",
