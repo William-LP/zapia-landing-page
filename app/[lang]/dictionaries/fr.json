@@ -87,7 +87,7 @@
     "badge": "La performance avant tout",
     "headline": "La vitesse n'est pas une option —",
     "headline_highlight": "c'est notre standard",
-    "sub": "Chaque serveur de notre flotte fonctionne sur NVMe SSD d'entreprise, connecté à un réseau 10 Gbps. Votre site WordPress, Node.js ou statique se charge en millisecondes, pas en secondes.",
+    "sub": "Chaque serveur de notre flotte fonctionne sur NVMe SSD d'entreprise, connecté à un réseau 10 Gbps. Votre site se charge en millisecondes, pas en secondes.",
     "bullets": [
       "Cœurs CPU dédiés sur tous les plans Pro et Business",
       "Support des protocoles HTTP/3 et QUIC par défaut",

@@ -87,7 +87,7 @@
     "badge": "Performance first",
     "headline": "Speed is not a feature —",
     "headline_highlight": "it's our baseline",
-    "sub": "Every server in our fleet runs on enterprise NVMe SSD, connected to a 10 Gbps network fabric. Your WordPress, Node.js, or static site loads in milliseconds, not seconds.",
+    "sub": "Every server in our fleet runs on enterprise NVMe SSD, connected to a 10 Gbps network fabric. Your website loads in milliseconds, not seconds.",
     "bullets": [
       "Dedicated CPU cores on all Pro and Business plans",
       "HTTP/3 and QUIC protocol support by default",
