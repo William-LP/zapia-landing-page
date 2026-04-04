@@ -1,5 +1,41 @@
+import type { Metadata } from "next";
 import { hasLocale } from "@/app/[lang]/dictionaries";
 import { notFound } from "next/navigation";
+
+const BASE_URL = "https://zapia.fr";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isEn = lang !== "fr";
+  const title = isEn
+    ? "Privacy Policy | Zapia"
+    : "Politique de confidentialité | Zapia";
+  const description = isEn
+    ? "Learn how Zapia collects, uses, and protects your personal data in compliance with GDPR and French law."
+    : "Découvrez comment Zapia collecte, utilise et protège vos données personnelles conformément au RGPD et au droit français.";
+  return {
+    title,
+    description,
+    robots: { index: true, follow: true },
+    alternates: {
+      canonical: `${BASE_URL}/${lang}/privacy-policy`,
+      languages: {
+        en: `${BASE_URL}/en/privacy-policy`,
+        fr: `${BASE_URL}/fr/privacy-policy`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${BASE_URL}/${lang}/privacy-policy`,
+      siteName: "Zapia",
+    },
+  };
+}
 
 const content = {
   en: {

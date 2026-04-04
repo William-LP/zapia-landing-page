@@ -1,5 +1,39 @@
+import type { Metadata } from "next";
 import { hasLocale } from "@/app/[lang]/dictionaries";
 import { notFound } from "next/navigation";
+
+const BASE_URL = "https://zapia.fr";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isEn = lang !== "fr";
+  const title = isEn ? "Cookie Policy | Zapia" : "Politique des cookies | Zapia";
+  const description = isEn
+    ? "Understand how Zapia uses cookies on its website and how to manage your cookie preferences."
+    : "Comprenez comment Zapia utilise les cookies sur son site et comment gérer vos préférences.";
+  return {
+    title,
+    description,
+    robots: { index: true, follow: true },
+    alternates: {
+      canonical: `${BASE_URL}/${lang}/cookie-policy`,
+      languages: {
+        en: `${BASE_URL}/en/cookie-policy`,
+        fr: `${BASE_URL}/fr/cookie-policy`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${BASE_URL}/${lang}/cookie-policy`,
+      siteName: "Zapia",
+    },
+  };
+}
 
 const content = {
   en: {

@@ -1,5 +1,39 @@
+import type { Metadata } from "next";
 import { hasLocale } from "@/app/[lang]/dictionaries";
 import { notFound } from "next/navigation";
+
+const BASE_URL = "https://zapia.fr";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isEn = lang !== "fr";
+  const title = isEn ? "Terms of Service | Zapia" : "Conditions d'utilisation | Zapia";
+  const description = isEn
+    ? "Read Zapia's terms of service governing your use of our web hosting and design services."
+    : "Lisez les conditions d'utilisation de Zapia régissant l'utilisation de nos services d'hébergement et de conception web.";
+  return {
+    title,
+    description,
+    robots: { index: true, follow: true },
+    alternates: {
+      canonical: `${BASE_URL}/${lang}/terms-of-service`,
+      languages: {
+        en: `${BASE_URL}/en/terms-of-service`,
+        fr: `${BASE_URL}/fr/terms-of-service`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${BASE_URL}/${lang}/terms-of-service`,
+      siteName: "Zapia",
+    },
+  };
+}
 
 const content = {
   en: {

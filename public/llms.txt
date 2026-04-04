@@ -1,0 +1,56 @@
+# Zapia
+
+> Fast, reliable, and affordable web hosting — designed, built, and operated in France.
+
+Zapia is a French web hosting and web design company. We offer managed hosting plans (NVMe SSD, unlimited bandwidth, free SSL, daily backups) and custom website design & development services. All infrastructure is located in France and fully GDPR-compliant.
+
+## Services
+
+### Web Hosting
+- NVMe SSD hosting — up to 20× faster than traditional hard drives
+- Unlimited bandwidth on all plans
+- Free SSL certificates (Let's Encrypt, auto-renewing)
+- Daily automated backups (7 / 30 / 60 days depending on plan)
+- DDoS protection (enterprise-grade, built-in)
+- Global CDN (30+ edge locations)
+- Unlimited databases (MySQL, MariaDB, PostgreSQL)
+- Real-time analytics (built-in, no third-party tools required)
+- Support for Node.js, Python, Ruby, PHP; Docker on Business plan
+- HTTP/3 and QUIC protocol support
+- Built-in Redis object cache
+- Brotli compression on all static assets
+- 99.9% uptime SLA
+
+### Pricing
+- Monthly and annual plans available (annual = 2 months free)
+- 30-day money-back guarantee, no questions asked
+- No hidden fees, no contracts
+
+### Custom Website Design
+- Full-service web design and development
+- Mobile-first, fully responsive
+- SEO-optimised from day one
+- Hosting included (Zapia Pro plan)
+- Support 365 days a year
+- Custom pricing based on project scope
+
+## Infrastructure & Compliance
+- All servers located exclusively in France
+- Data never leaves EU borders
+- Full GDPR (Règlement Général sur la Protection des Données) compliance
+- French data protection law (loi Informatique et Libertés)
+- TLS encryption in transit, AES-256 at rest
+- Operated by a French team
+
+## Company
+- Name: Zapia
+- Country: France
+- Contact: contact@zapia.fr
+- Website: https://zapia.fr
+- Languages: French (primary), English
+
+## Legal
+- Privacy Policy: https://zapia.fr/fr/privacy-policy
+- Terms of Service: https://zapia.fr/fr/terms-of-service
+- Cookie Policy: https://zapia.fr/fr/cookie-policy
+- GDPR: https://zapia.fr/fr/gdpr

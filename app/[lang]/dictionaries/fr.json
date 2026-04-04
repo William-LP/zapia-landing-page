@@ -1,7 +1,19 @@
 {
   "metadata": {
     "title": "Zapia — L'hébergement web simplifié",
-    "description": "Hébergement web rapide, fiable et abordable pour tous. Lancez votre site dès aujourd'hui avec la plateforme d'hébergement puissante de Zapia."
+    "description": "Hébergement web rapide, fiable et abordable pour tous. Lancez votre site dès aujourd'hui avec la plateforme d'hébergement puissante de Zapia.",
+    "keywords": [
+      "hébergement web",
+      "hébergement cloud",
+      "VPS",
+      "serveurs dédiés",
+      "hébergement domaine",
+      "zapia",
+      "hébergement France",
+      "hébergement NVMe SSD",
+      "hébergement WordPress",
+      "hébergement conforme RGPD"
+    ]
   },
   "nav": {
     "features": "Fonctionnalités",
@@ -31,23 +43,6 @@
     "headline": "Un hébergement qui travaille",
     "headline_highlight": "aussi dur que vous",
     "sub": "Chaque offre est livrée avec des fonctionnalités professionnelles — sans modules complémentaires, sans mauvaises surprises sur votre facture.",
-    "france_strip": {
-      "label": "Fait en France — hébergé sur infrastructure française, régi par le droit français et européen",
-      "items": [
-        {
-          "title": "Fait en France",
-          "desc": "Conçu, développé et opéré par une équipe française. Chaque décision prise ici, pour vous."
-        },
-        {
-          "title": "Serveurs en France",
-          "desc": "Vos données sont hébergées exclusivement en France — elles ne quittent jamais les frontières de l'UE."
-        },
-        {
-          "title": "Souveraineté numérique",
-          "desc": "Conformité RGPD totale et droit français à la protection des données. Vos données vous appartiennent, toujours."
-        }
-      ]
-    },
     "items": [
       {
         "title": "NVMe SSD ultra-rapide",
@@ -133,8 +128,6 @@
       "Certificat SSL gratuit",
       "Sauvegardes quotidiennes"
     ],
-    "footer_text": "Besoin de plus ?",
-    "footer_link": "Parlez-nous de serveurs dédiés →",
     "custom_title": "Site web sur mesure",
     "custom_desc": "Nous concevons et développons votre site — de l'idée à la mise en ligne.",
     "custom_price": "Prix selon projet",
@@ -187,8 +180,8 @@
     "footer_link": "Discutez avec notre équipe →"
   },
   "cta": {
-    "headline": "Prêt à lancer ?",
-    "headline_highlight": "Votre site mérite mieux.",
+    "headline": "Prêt à vous lancer ?",
+    "headline_highlight": "Votre site mérite ce qu'il y a de mieux.",
     "sub": "Votre site de marque, conçu, développé et géré par nos experts — en ligne en moins d'une semaine.",
     "button": "Héberger mon site aujourd'hui",
     "trust_moneyback": "Satisfait ou remboursé 30 jours",

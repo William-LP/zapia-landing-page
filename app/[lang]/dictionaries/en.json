@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "Zapia — Web Hosting Made Simple",
-    "description": "Fast, reliable, and affordable web hosting for everyone. Launch your website today with Zapia's powerful hosting platform."
+    "description": "Fast, reliable, and affordable web hosting for everyone. Launch your website today with Zapia's powerful hosting platform.",
+    "keywords": ["web hosting", "cloud hosting", "VPS", "dedicated servers", "domain hosting", "zapia", "France hosting", "NVMe SSD hosting", "WordPress hosting", "GDPR compliant hosting"]
   },
   "nav": {
     "features": "Features",
@@ -31,23 +32,6 @@
     "headline": "Hosting that works",
     "headline_highlight": "as hard as you do",
     "sub": "Every plan comes packed with professional-grade features — no add-ons required, no surprises on your bill.",
-    "france_strip": {
-      "label": "Made in France — built on French infrastructure, governed by French & EU law",
-      "items": [
-        {
-          "title": "Made in France",
-          "desc": "Designed, built, and operated by a French team. Every decision made here, for you."
-        },
-        {
-          "title": "French Servers",
-          "desc": "Your data is hosted exclusively in France — it never crosses EU borders."
-        },
-        {
-          "title": "Digital Sovereignty",
-          "desc": "Full GDPR compliance and French data protection law. You own your data, always."
-        }
-      ]
-    },
     "items": [
       {
         "title": "Lightning-Fast NVMe SSD",
@@ -133,8 +117,6 @@
       "Free SSL certificate",
       "Daily backups"
     ],
-    "footer_text": "Need something bigger?",
-    "footer_link": "Talk to us about dedicated servers →",
     "custom_title": "Custom Website",
     "custom_desc": "We design and build your website for you — from concept to launch.",
     "custom_price": "Custom pricing",
