@@ -109,6 +109,8 @@
     "plan_annual_desc": "One payment, two months free.",
     "plan_monthly_title": "Monthly plan",
     "plan_monthly_desc": "Flexible month-to-month billing.",
+    "per_year": "year",
+    "per_month": "month",
     "savings_note": "That's 8.25€/month — save 20.88€ vs monthly",
     "cta": "Get started",
     "features": [

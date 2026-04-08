@@ -74,7 +74,7 @@ export default function Pricing({ t }: Props) {
                   {annual ? "99" : "9.99"}€
                 </span>
                 <span className="text-sm text-indigo-200 pb-1">
-                  /{annual ? "year" : "month"}
+                  /{annual ? t.per_year : t.per_month}
                 </span>
               </div>
               {annual && (

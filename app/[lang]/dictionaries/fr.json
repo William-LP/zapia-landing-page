@@ -120,6 +120,8 @@
     "plan_annual_desc": "Un seul paiement, deux mois offerts.",
     "plan_monthly_title": "Offre mensuelle",
     "plan_monthly_desc": "Facturation mensuelle flexible.",
+    "per_year": "an",
+    "per_month": "mois",
     "savings_note": "Soit 8,25 €/mois — économisez 20,88 € vs mensuel",
     "cta": "Commencer",
     "features": [
