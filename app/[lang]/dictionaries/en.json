@@ -139,36 +139,32 @@
     "headline_highlight": "questions",
     "items": [
       {
-        "q": "Can I migrate my existing website to Zapia for free?",
-        "a": "Yes! Our migration team handles the full transfer — files, databases, emails, and DNS — at no extra cost. Most migrations complete within 24 hours with zero downtime."
+        "q": "I already have a website — can you work with it?",
+        "a": "Absolutely. We can migrate your existing site to our infrastructure, or build you a brand-new one from scratch — whichever makes more sense for your situation."
       },
       {
-        "q": "What happens if I exceed my storage limit?",
-        "a": "We'll notify you by email before you hit the cap, giving you time to upgrade. We never suddenly suspend your account for storage — you always get a warning first."
+        "q": "I don't have a website yet. Where do I start?",
+        "a": "No problem at all. We take care of everything: design, development, and launch. Just tell us about your project and we'll handle the rest."
       },
       {
-        "q": "Do you support Node.js, Python, or Ruby apps?",
-        "a": "Yes. All plans support Node.js, Python (with virtualenv), Ruby, PHP, and Docker with custom runtime support."
+        "q": "What if I want to update the website myself?",
+        "a": "We use Strapi as a CMS, so you can log in and edit your content whenever you need to — no technical knowledge required."
       },
       {
-        "q": "Is the money-back guarantee really no questions asked?",
-        "a": "Absolutely. Within 30 days, just email our support and we'll issue a full refund. No hoops, no interrogation."
+        "q": "What about my domain name?",
+        "a": "We can register a new domain for you, or keep using the one you already own — it makes no difference. Either way, everything is handled seamlessly."
       },
       {
-        "q": "Can I host multiple domains on one plan?",
-        "a": "Your plan includes unlimited websites and domains — all managed from a single dashboard."
+        "q": "How does billing work?",
+        "a": "We send you an invoice each billing period — monthly or yearly, depending on the plan you choose. No surprises."
       },
       {
-        "q": "How are backups handled?",
-        "a": "We take automated daily snapshots stored in geographically redundant locations. Restores are one click from your control panel."
-      },
-      {
-        "q": "Do you offer a free trial?",
-        "a": "We don't currently offer a trial period, but our 30-day money-back guarantee gives you the same protection — try Zapia risk-free and request a refund if it's not the right fit."
+        "q": "Can I reach out if I need help?",
+        "a": "Of course. You can contact us any time at support@zapia.fr — we respond quickly."
       }
     ],
     "footer_text": "Still have questions?",
-    "footer_link": "Chat with our team →"
+    "footer_link": "Contact us at support@zapia.fr →"
   },
   "cta": {
     "headline": "Ready to launch?",

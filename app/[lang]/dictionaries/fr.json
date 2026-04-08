@@ -152,36 +152,32 @@
     "headline_highlight": "fréquentes",
     "items": [
       {
-        "q": "Puis-je migrer mon site existant vers Zapia gratuitement ?",
-        "a": "Oui ! Notre équipe de migration prend en charge le transfert complet — fichiers, bases de données, e-mails et DNS — sans frais supplémentaires. La plupart des migrations sont effectuées en 24 heures sans interruption de service."
+        "q": "J'ai déjà un site web — vous pouvez travailler avec ?",
+        "a": "Bien sûr. Nous pouvons migrer votre site existant vers notre infrastructure, ou vous en créer un nouveau de A à Z — selon ce qui est le plus adapté à votre situation."
       },
       {
-        "q": "Que se passe-t-il si je dépasse ma limite de stockage ?",
-        "a": "Nous vous informons par e-mail avant que vous atteigniez le plafond, vous laissant le temps de passer à une offre supérieure. Nous ne suspendons jamais votre compte sans avertissement préalable."
+        "q": "Je n'ai pas encore de site web. Par où commencer ?",
+        "a": "Aucun problème. Nous nous occupons de tout : design, développement et mise en ligne. Parlez-nous de votre projet, on s'occupe du reste."
       },
       {
-        "q": "Prenez-vous en charge Node.js, Python ou Ruby ?",
-        "a": "Oui. Tous les plans prennent en charge Node.js, Python (avec virtualenv), Ruby, PHP, ainsi que Docker et les runtimes personnalisés."
+        "q": "Et si je veux gérer le site moi-même ?",
+        "a": "Nous utilisons Strapi comme CMS, ce qui vous permet de vous connecter et de modifier votre contenu quand vous le souhaitez — sans aucune compétence technique requise."
       },
       {
-        "q": "La garantie de remboursement est-elle vraiment sans condition ?",
-        "a": "Absolument. Dans les 30 jours, envoyez simplement un e-mail à notre support et nous vous rembourserons intégralement. Aucune contrainte, aucune interrogatoire."
+        "q": "Qu'en est-il de mon nom de domaine ?",
+        "a": "Nous pouvons enregistrer un nouveau domaine pour vous, ou conserver celui que vous avez déjà — c'est exactement pareil. Dans les deux cas, tout est géré sans friction."
       },
       {
-        "q": "Puis-je héberger plusieurs domaines sur un seul plan ?",
-        "a": "Votre plan inclut des sites et des domaines illimités — tous gérés depuis un tableau de bord unique."
+        "q": "Comment se passe le paiement ?",
+        "a": "Nous vous envoyons une facture à chaque période de facturation — mensuelle ou annuelle selon l'offre choisie. Aucune mauvaise surprise."
       },
       {
-        "q": "Comment les sauvegardes sont-elles gérées ?",
-        "a": "Nous effectuons des instantanés quotidiens automatiques stockés dans des emplacements géographiquement redondants. La restauration se fait en un clic depuis votre panneau de contrôle."
-      },
-      {
-        "q": "Proposez-vous un essai gratuit ?",
-        "a": "Nous ne proposons pas actuellement de période d'essai, mais notre garantie satisfait ou remboursé de 30 jours vous offre la même protection — testez Zapia sans risque et demandez un remboursement si ce n'est pas la solution qu'il vous faut."
+        "q": "Puis-je vous contacter si j'ai besoin d'aide ?",
+        "a": "Bien sûr. Vous pouvez nous écrire à tout moment à support@zapia.fr — nous répondons rapidement."
       }
     ],
     "footer_text": "Vous avez encore des questions ?",
-    "footer_link": "Discutez avec notre équipe →"
+    "footer_link": "Contactez-nous à support@zapia.fr →"
   },
   "cta": {
     "headline": "Prêt à vous lancer ?",
