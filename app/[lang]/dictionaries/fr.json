@@ -28,7 +28,7 @@
     "headline": "L'hébergement qui ne",
     "headline_highlight": "vous ralentit jamais",
     "headline_end": "",
-    "sub": "Déployez votre site en quelques secondes. Bande passante illimitée, sauvegardes automatiques et support expert — tout en un seul endroit. Sans frais cachés.",
+    "sub": "Bande passante illimitée, sauvegardes automatiques et support expert — tout en un seul endroit. Sans frais cachés.",
     "cta_primary": "Démarrer gratuitement",
     "cta_secondary": "Voir toutes les fonctionnalités",
     "trust_moneyback": "Satisfait ou remboursé 30 jours",
@@ -84,7 +84,7 @@
     "headline_highlight": "c'est notre standard",
     "sub": "Chaque serveur de notre flotte fonctionne sur NVMe SSD d'entreprise, connecté à un réseau 10 Gbps. Votre site se charge en millisecondes, pas en secondes.",
     "bullets": [
-      "Cœurs CPU dédiés sur tous les plans",
+      "Cœurs CPU dédiés",
       "Support des protocoles HTTP/3 et QUIC par défaut",
       "Cache objet intégré avec Redis",
       "Compression Brotli pour tous les fichiers statiques"
@@ -182,7 +182,7 @@
   "cta": {
     "headline": "Prêt à vous lancer ?",
     "headline_highlight": "Votre site mérite ce qu'il y a de mieux.",
-    "sub": "Votre site de marque, conçu, développé et géré par nos experts — en ligne en moins d'une semaine.",
+    "sub": "Votre site conçu, développé et géré par nos experts — en ligne en moins d'une semaine.",
     "button": "Héberger mon site aujourd'hui",
     "trust_moneyback": "Satisfait ou remboursé 30 jours",
     "trust_france": "Hébergé en France · Souveraineté numérique européenne"

@@ -17,7 +17,7 @@
     "headline": "The hosting that",
     "headline_highlight": "never slows",
     "headline_end": "you down",
-    "sub": "Deploy your website in seconds. Unlimited bandwidth, automatic backups, and expert support — all in one place. No hidden fees, ever.",
+    "sub": "Unlimited bandwidth, automatic backups, and expert support — all in one place. No hidden fees, ever.",
     "cta_primary": "Start for free",
     "cta_secondary": "See all features",
     "trust_moneyback": "30-day money-back guarantee",
@@ -73,7 +73,7 @@
     "headline_highlight": "it's our baseline",
     "sub": "Every server in our fleet runs on enterprise NVMe SSD, connected to a 10 Gbps network fabric. Your website loads in milliseconds, not seconds.",
     "bullets": [
-      "Dedicated CPU cores on all plans",
+      "Dedicated CPU cores",
       "HTTP/3 and QUIC protocol support by default",
       "Built-in object cache with Redis",
       "Brotli compression for all static assets"
