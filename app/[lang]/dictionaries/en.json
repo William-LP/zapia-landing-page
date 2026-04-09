@@ -160,11 +160,11 @@
       },
       {
         "q": "Can I reach out if I need help?",
-        "a": "Of course. You can contact us any time at support@zapia.fr — we respond quickly."
+        "a": "Of course. You can contact us any time at contact@zapia.fr — we respond quickly."
       }
     ],
     "footer_text": "Still have questions?",
-    "footer_link": "Contact us at support@zapia.fr →"
+    "footer_link": "Contact us at contact@zapia.fr →"
   },
   "cta": {
     "headline": "Ready to launch?",

@@ -92,7 +92,7 @@ export default function Pricing({ t }: Props) {
             </ul>
 
             <a
-              href="#"
+              href="mailto:contact@zapia.fr"
               className="block text-center py-3 px-6 rounded-xl font-semibold text-sm bg-white text-indigo-700 hover:bg-indigo-50 shadow-lg transition-all"
             >
               {t.cta}

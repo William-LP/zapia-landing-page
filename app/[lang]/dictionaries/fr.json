@@ -173,11 +173,11 @@
       },
       {
         "q": "Puis-je vous contacter si j'ai besoin d'aide ?",
-        "a": "Bien sûr. Vous pouvez nous écrire à tout moment à support@zapia.fr — nous répondons rapidement."
+        "a": "Bien sûr. Vous pouvez nous écrire à tout moment à contact@zapia.fr — nous répondons rapidement."
       }
     ],
     "footer_text": "Vous avez encore des questions ?",
-    "footer_link": "Contactez-nous à support@zapia.fr →"
+    "footer_link": "Contactez-nous à contact@zapia.fr →"
   },
   "cta": {
     "headline": "Prêt à vous lancer ?",

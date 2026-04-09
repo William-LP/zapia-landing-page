@@ -72,7 +72,7 @@ export default function Navbar({ t, lang }: Props) {
               {otherLang}
             </Link>
             <a
-              href="#pricing"
+              href="mailto:contact@zapia.fr"
               className="text-sm font-semibold px-4 py-2 rounded-lg gradient-bg text-white hover:opacity-90 transition-opacity"
             >
               {t.getstarted}
@@ -136,7 +136,7 @@ export default function Navbar({ t, lang }: Props) {
               {otherLang === "en" ? "🇬🇧 English" : "🇫🇷 Français"}
             </Link>
             <a
-              href="#pricing"
+              href="mailto:contact@zapia.fr"
               onClick={() => setOpen(false)}
               className="px-4 py-3 rounded-xl font-semibold text-sm gradient-bg text-white text-center hover:opacity-90 transition-opacity"
             >
