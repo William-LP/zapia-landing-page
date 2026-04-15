@@ -78,14 +78,8 @@ const DEFAULT_SERVICES = ["website"];
 
 // Coupon codes
 const VALID_COUPONS: Record<string, { type: "percent" | "flat"; value: number }> = {
-  ZAPIA10: { type: "percent", value: 10 },
-  EARLY20: { type: "percent", value: 20 },
-  LAUNCH50: { type: "percent", value: 50 },
-  DEMO: { type: "flat", value: 500 },
-  DEMO100: { type: "flat", value: 100 },
-  DEMO500: { type: "flat", value: 500 },
-  DEMO550: { type: "flat", value: 550 },
-  DEMO1000: { type: "flat", value: 1000 },
+  // ZAPIA10: { type: "percent", value: 10 },  
+  REDDIT: { type: "flat", value: 250 },
 };
 
 const INIT: OS = { step: "welcome", history: [], services: [], answers: {} };
@@ -1593,8 +1587,8 @@ export default function Hero({ t }: Props) {
                   key={mode}
                   onClick={() => { setContactMode(mode); setSubmitState("idle"); }}
                   className={`flex-1 py-2.5 rounded-xl text-sm font-medium border transition-all ${contactMode === mode
-                      ? "border-indigo-500 bg-indigo-500/15 text-indigo-300"
-                      : "border-white/10 bg-white/5 text-slate-400 hover:text-slate-300"
+                    ? "border-indigo-500 bg-indigo-500/15 text-indigo-300"
+                    : "border-white/10 bg-white/5 text-slate-400 hover:text-slate-300"
                     }`}
                 >
                   {mode === "email" ? t.contact_mode_email : t.contact_mode_phone}
