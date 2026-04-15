@@ -1,137 +1,247 @@
 {
   "metadata": {
-    "title": "Zapia — Web Hosting Made Simple",
-    "description": "Fast, reliable, and affordable web hosting for everyone. Launch your website today with Zapia's powerful hosting platform.",
-    "keywords": ["web hosting", "cloud hosting", "VPS", "dedicated servers", "domain hosting", "zapia", "France hosting", "NVMe SSD hosting", "WordPress hosting", "GDPR compliant hosting"]
+    "title": "Zapia — Digital infrastructure for professionals",
+    "description": "Website, domain, email, cloud, VPN — we set up and manage your entire digital infrastructure from day one. Expert support included.",
+    "keywords": [
+      "digital infrastructure",
+      "professional website",
+      "business email",
+      "cloud storage",
+      "VPN",
+      "zapia",
+      "France hosting",
+      "IT setup",
+      "small business IT",
+      "GDPR compliant"
+    ]
   },
   "nav": {
-    "features": "Features",
+    "features": "Services",
     "pricing": "Pricing",
-    "performance": "Performance",
+    "performance": "How it works",
     "faq": "FAQ",
     "signin": "Sign in",
     "getstarted": "Get started"
   },
   "hero": {
-    "badge": "Blazing-fast NVMe SSD hosting",
-    "headline": "The hosting that",
-    "headline_highlight": "never slows",
-    "headline_end": "you down",
-    "sub": "Unlimited bandwidth, automatic backups, and expert support — all in one place. No hidden fees, ever.",
-    "cta_primary": "Start for free",
-    "cta_secondary": "See all features",
-    "trust_moneyback": "30-day money-back guarantee",
+    "badge": "Your digital partner from day one",
+    "headline": "Everything your business needs,",
+    "headline_highlight": "ready from day one",
+    "headline_end": "",
+    "sub": "Website, domain, email, cloud, VPN — we set everything up and manage it for you. Focus on your business, we handle the rest.",
+    "selector_title": "What do you need?",
+    "selector_sub": "Select your services — we'll handle the rest.",
+    "cta_primary": "Get started",
+    "cta_selected": "Set up my selection",
+    "cta_secondary": "See all services",
+    "trust_moneyback": "No hidden fees, ever",
     "trust_france": "Hosted in France · EU data sovereignty",
-    "stat_uptime": "Uptime SLA",
-    "stat_response": "Avg. response time",
-    "stat_websites": "Security grade",
-    "stat_support": "Expert support"
+    "stat_clients": "Businesses supported",
+    "stat_setup": "Avg. setup time",
+    "stat_services": "Services managed",
+    "stat_support": "Expert support",
+    "services": [
+      {
+        "id": "website",
+        "title": "Company website",
+        "description": "Design, build & publish"
+      },
+      {
+        "id": "domain",
+        "title": "Domain name",
+        "description": "Registration & management"
+      },
+      {
+        "id": "email",
+        "title": "Professional email",
+        "description": "Addresses @your-company.com"
+      },
+      {
+        "id": "cloud",
+        "title": "Cloud storage",
+        "description": "Drive & file sharing"
+      },
+      {
+        "id": "collab",
+        "title": "Collaboration suite",
+        "description": "Video, docs, calendar"
+      },
+      {
+        "id": "vpn",
+        "title": "Business VPN",
+        "description": "Secure remote access"
+      }
+    ]
   },
   "features": {
-    "badge": "Everything you need",
-    "headline": "Hosting that works",
-    "headline_highlight": "as hard as you do",
-    "sub": "Every plan comes packed with professional-grade features — no add-ons required, no surprises on your bill.",
+    "badge": "All in one place",
+    "headline": "One partner to",
+    "headline_highlight": "handle everything",
+    "sub": "From your domain to your VPN, we manage your entire digital infrastructure — so you never have to juggle multiple vendors or worry about technical setup.",
+    "coming_soon": "Coming soon",
     "items": [
       {
-        "title": "Lightning-Fast NVMe SSD",
-        "description": "Up to 20x faster than traditional hard drives. Your visitors get sub-second page loads every time."
+        "title": "Company website",
+        "description": "Professional website designed, built and deployed by our team. Mobile-first, fast, and SEO-optimised from day one.",
+        "comingSoon": false
       },
       {
-        "title": "Global CDN",
-        "description": "Your content served from 30+ edge locations worldwide. Faster delivery no matter where your audience is."
+        "title": "Domain name",
+        "description": "We register and manage your domain. DNS, transfers, renewals — all handled without you lifting a finger.",
+        "comingSoon": false
       },
       {
-        "title": "Free SSL Certificates",
-        "description": "Auto-renewing Let's Encrypt SSL on every domain. HTTPS is enabled by default — no extra steps."
+        "title": "Expert support",
+        "description": "Real humans, not bots. Our experts are on hand whenever you need help — onboarding, troubleshooting, or just a question.",
+        "comingSoon": false
       },
       {
-        "title": "Daily Backups",
-        "description": "Automatic daily snapshots kept for 30 days. Restore your entire site in one click if anything goes wrong."
+        "title": "Security & backups",
+        "description": "SSL certificates, firewall protection, and automatic daily backups. Your data stays safe and your services stay online.",
+        "comingSoon": false
       },
       {
-        "title": "Unlimited Databases",
-        "description": "MySQL, MariaDB, and PostgreSQL with no cap on the number of databases. Scale your data however you need."
+        "title": "Professional email",
+        "description": "Custom email addresses at your domain (you@your-company.com). Reliable, spam-filtered, accessible from any device.",
+        "comingSoon": true
       },
       {
-        "title": "DDoS Protection",
-        "description": "Enterprise-grade DDoS mitigation built in. Your site stays online even under heavy attack."
+        "title": "Cloud storage",
+        "description": "Secure file storage and sharing for your team. Access your documents from anywhere, with automatic backups.",
+        "comingSoon": true
       },
       {
-        "title": "Real-Time Analytics",
-        "description": "Built-in traffic analytics — track visitors, bandwidth, and performance without third-party tools."
+        "title": "Collaboration suite",
+        "description": "Video conferencing, shared documents, and team calendar — everything your team needs to work together efficiently.",
+        "comingSoon": true
       },
       {
-        "title": "Expert Support",
-        "description": "Real humans, not bots. Our hosting experts are available via live chat and ticket whenever you need them."
+        "title": "Business VPN",
+        "description": "Secure remote access for your team. Connect to your business resources safely from anywhere in the world.",
+        "comingSoon": true
       }
     ]
   },
   "performance": {
-    "badge": "Performance first",
-    "headline": "Speed is not a feature —",
-    "headline_highlight": "it's our baseline",
-    "sub": "Every server in our fleet runs on enterprise NVMe SSD, connected to a 10 Gbps network fabric. Your website loads in milliseconds, not seconds.",
+    "badge": "Simple & fast",
+    "headline": "Operational in",
+    "headline_highlight": "less than 48 hours",
+    "sub": "We take care of the entire setup so you can focus on running your business. No technical knowledge required on your end.",
     "bullets": [
-      "Dedicated CPU cores",
-      "HTTP/3 and QUIC protocol support by default",
-      "Built-in object cache with Redis",
-      "Brotli compression for all static assets"
+      "30-min discovery call to understand your needs",
+      "We configure everything on your behalf",
+      "Team training and handover included",
+      "Ongoing support, for as long as you need it"
     ],
     "metrics": [
       {
-        "label": "Average TTFB",
-        "description": "Time to first byte — the fastest in its class"
+        "label": "Average setup time",
+        "description": "From first call to fully operational"
       },
       {
-        "label": "Uptime (last 12 months)",
-        "description": "Measured across all regions and plans"
+        "label": "Businesses supported",
+        "description": "And growing every month"
       },
       {
-        "label": "Storage technology",
-        "description": "Cutting-edge drives, 20× faster than SATA SSD"
+        "label": "Guaranteed response time",
+        "description": "Monday to Friday, we reply to every query within 24h"
       },
       {
-        "label": "Edge locations",
-        "description": "Global CDN nodes for low-latency delivery"
+        "label": "Uptime SLA",
+        "description": "Reliable infrastructure, guaranteed"
       }
     ]
   },
   "pricing": {
     "badge": "Simple pricing",
-    "headline": "Pay for what you need,",
-    "headline_highlight": "nothing more",
-    "sub": "30-day money-back guarantee. No contracts, cancel anytime.",
+    "headline": "Everything you need,",
+    "headline_highlight": "no surprises",
+    "sub": "One clear invoice. No hidden fees, no vendor juggling. Cancel anytime.",
     "toggle_monthly": "Monthly",
     "toggle_annual": "Annual",
     "badge_savings": "2 months free",
-    "plan_annual_title": "Annual plan",
+    "plan_annual_title": "Starter — Annual",
     "plan_annual_desc": "One payment, two months free.",
-    "plan_monthly_title": "Monthly plan",
+    "plan_monthly_title": "Starter — Monthly",
     "plan_monthly_desc": "Flexible month-to-month billing.",
     "per_year": "year",
     "per_month": "month",
     "savings_note": "That's 8.25€/month — save 20.88€ vs monthly",
     "cta": "Get started",
     "features": [
-      "Full access to all features",
-      "Unlimited bandwidth",
-      "Free SSL certificate",
-      "Daily backups"
+      "Company website hosted & managed",
+      "Professional email addresses",
+      "Domain registration & renewal",
+      "Daily backups & SSL included"
     ],
-    "custom_title": "Custom Website",
-    "custom_desc": "We design and build your website for you — from concept to launch.",
+    "custom_title": "Full Digital Suite",
+    "custom_desc": "Website, email, cloud storage, collaboration tools, and VPN — set up and managed for you.",
     "custom_price": "Custom pricing",
-    "custom_sub": "Tailored to your project's scope and requirements.",
+    "custom_sub": "Tailored to your team size and service needs.",
     "custom_features": [
-      "Professional design & development",
-      "Mobile-first, fully responsive",
-      "SEO-optimised from day one",
-      "Hosting included",
-      "Reliable support, 365 days a year"
+      "All Starter services included",
+      "Cloud storage & file sharing",
+      "Collaboration suite (video, docs, calendar)",
+      "Business VPN for your whole team",
+      "Priority support, 365 days a year"
     ],
     "custom_cta": "Get a free quote",
-    "custom_badge": "Done for you"
+    "custom_badge": "All included",
+    "coming_soon": "Coming soon",
+    "price_items": [
+      {
+        "label": "Website design & development",
+        "price": "500€",
+        "comingSoon": false
+      },
+      {
+        "label": "Company website hosting",
+        "price": "100€ / year",
+        "comingSoon": false
+      },
+      {
+        "label": "Domain name",
+        "price": "~10–15€ / year",
+        "comingSoon": false
+      },
+      {
+        "label": "Expert support",
+        "price": "Included",
+        "comingSoon": false
+      },
+      {
+        "label": "SEO setup",
+        "price": "Included",
+        "comingSoon": false
+      },
+      {
+        "label": "Security & backups",
+        "price": "Included",
+        "comingSoon": false
+      },
+      {
+        "label": "Professional email",
+        "price": null,
+        "comingSoon": true
+      },
+      {
+        "label": "Cloud storage",
+        "price": null,
+        "comingSoon": true
+      },
+      {
+        "label": "Collaboration suite",
+        "price": null,
+        "comingSoon": true
+      },
+      {
+        "label": "Business VPN",
+        "price": null,
+        "comingSoon": true
+      }
+    ],
+    "cta_label": "Get started",
+    "included": "Included"
   },
   "faq": {
     "badge": "Got questions?",
@@ -139,43 +249,51 @@
     "headline_highlight": "questions",
     "items": [
       {
-        "q": "I already have a website — can you work with it?",
-        "a": "Absolutely. We can migrate your existing site to our infrastructure, or build you a brand-new one from scratch — whichever makes more sense for your situation."
+        "q": "Do I need any technical knowledge?",
+        "a": "Not at all. We handle the entire setup for you — from registering your domain to configuring your email and VPN. You just tell us what you need, and we take care of the rest."
       },
       {
-        "q": "I don't have a website yet. Where do I start?",
-        "a": "No problem at all. We take care of everything: design, development, and launch. Just tell us about your project and we'll handle the rest."
+        "q": "How long does the setup take?",
+        "a": "Most setups are completed within 48 hours. We start with a 30-minute call to understand your needs, then get everything configured and running as quickly as possible."
       },
       {
-        "q": "What if I want to update the website myself?",
-        "a": "We use Strapi as a CMS, so you can log in and edit your content whenever you need to — no technical knowledge required."
+        "q": "Can I pick only some services?",
+        "a": "Absolutely. You choose what you need — whether that's just a website and email, or the full suite with cloud and VPN. You can also add services later as your business grows."
       },
       {
-        "q": "What about my domain name?",
-        "a": "We can register a new domain for you, or keep using the one you already own — it makes no difference. Either way, everything is handled seamlessly."
+        "q": "What if I already have some of these set up elsewhere?",
+        "a": "No problem. We can migrate your existing domain, email, or website to our infrastructure, or simply manage what you already have. We'll find the best approach for your situation."
       },
       {
         "q": "How does billing work?",
-        "a": "We send you an invoice each billing period — monthly or yearly, depending on the plan you choose. No surprises."
+        "a": "We send a clear invoice each billing period — monthly or yearly, depending on your plan. One invoice, one payment, no surprises."
       },
       {
         "q": "Can I reach out if I need help?",
-        "a": "Of course. You can contact us any time at contact@zapia.fr — we respond quickly."
+        "a": "Of course. You can contact us any time at contact@zapia.fr — we respond quickly and are always happy to help."
+      },
+      {
+        "q": "Why choose Zapia over Wix, WordPress, or Hostinger?",
+        "a": "Those platforms give you tools — but leave all the work to you: building the site, managing plugins, keeping everything up to date. With Zapia, we handle everything from design to launch. Our websites look better, rank higher on search engines, and are often more affordable than a traditional agency. You get a single point of contact, a fully managed site, and ongoing support."
+      },
+      {
+        "q": "Can I be involved in the design of my website?",
+        "a": "Absolutely — and we encourage it. Tell us what you need: contact form, payment gateway, onboarding flow, interactive map, product catalogue... We build your site from scratch, tailored to your brand and your goals. That's exactly what sets us apart: while Wix or WordPress offer generic templates, Zapia creates something unique — designed specifically for you."
       }
     ],
     "footer_text": "Still have questions?",
     "footer_link": "Contact us at contact@zapia.fr →"
   },
   "cta": {
-    "headline": "Ready to launch?",
-    "headline_highlight": "Your site deserves better.",
-    "sub": "Your brand website, designed, built, and managed by our experts — live in under a week.",
-    "button": "Start hosting today",
-    "trust_moneyback": "30-day money-back guarantee",
+    "headline": "Ready to get started?",
+    "headline_highlight": "We handle everything.",
+    "sub": "Tell us what you need. We configure, set up, and train your team — so you can focus on your business from day one.",
+    "button": "Get started today",
+    "trust_moneyback": "No hidden fees, ever",
     "trust_france": "Hosted in France · EU data sovereignty"
   },
   "footer": {
-    "tagline": "Fast, reliable hosting for everyone. From personal blogs to high-traffic stores.",
+    "tagline": "Your complete digital infrastructure, set up and managed by experts from day one.",
     "categories": {
       "Product": "Product",
       "Company": "Company",
@@ -183,7 +301,7 @@
     },
     "links": {
       "Product": [
-        "Features",
+        "Services",
         "Pricing"
       ],
       "Company": [
@@ -198,5 +316,147 @@
     },
     "copyright": "All rights reserved.",
     "status": "All systems operational"
+  },
+  "onboarding": {
+    "badge": "Your digital partner from day one",
+    "welcome_title": "Let's build your",
+    "welcome_title_highlight": "digital workspace",
+    "welcome_sub": "Answer a few quick questions — we'll put together a setup plan tailored to your business.",
+    "welcome_cta": "Get started",
+    "back": "Back",
+    "next": "Continue",
+    "services_title": "What does your business need?",
+    "services_sub": "Select everything that applies — you can always add more later.",
+    "services_cta": "Continue",
+    "services_none": "Select at least one service",
+    "coming_soon": "Coming soon",
+    "service_website": "Company website",
+    "service_website_sub": "Design, build & publish",
+    "service_domain": "Domain name",
+    "service_domain_sub": "your-company.com",
+    "service_email": "Business email",
+    "service_email_sub": "you@your-company.com",
+    "service_cloud": "Cloud drive",
+    "service_cloud_sub": "File storage & sharing",
+    "service_vpn": "VPN",
+    "service_vpn_sub": "Secure remote access",
+    "service_support": "Tech support",
+    "service_support_sub": "Expert help on demand",
+    "service_passwords": "Password manager",
+    "service_passwords_sub": "Keep credentials safe",
+    "service_collab": "Collaboration suite",
+    "service_collab_sub": "Video, docs, calendar",
+    "service_coworking": "Coworking space",
+    "service_coworking_sub": "Find a shared workspace",
+    "service_incubator": "Incubator",
+    "service_incubator_sub": "Startup support & growth",
+    "website_existing_title": "Do you already have a company website?",
+    "website_existing_yes": "Yes, I have one",
+    "website_existing_no": "No, not yet",
+    "website_url_title": "What's the URL of your current website?",
+    "website_url_placeholder": "https://your-company.com",
+    "website_url_skip": "Skip for now",
+    "website_build_title": "How would you like to build your website?",
+    "website_migrate_title": "How would you like to handle the migration to Zapia?",
+    "website_build_self": "I'll build it myself",
+    "website_build_self_sub": "Build and manage your site yourself with WordPress",
+    "website_build_us": "Let Zapia build it for me",
+    "website_build_us_sub": "Our team handles design & development",
+    "website_build_skip_new": "I'm not interested in a website",
+    "website_build_skip_migrate": "I'm not interested in migrating",
+    "domain_existing_title": "Do you already own a domain name?",
+    "domain_name_title": "What is your domain name?",
+    "domain_existing_yes": "Yes, I have one",
+    "domain_existing_no": "No, I need one",
+    "domain_search_title": "What domain name are you looking for?",
+    "domain_search_sub": "Type a name and we'll check availability",
+    "domain_search_placeholder": "your-company.com",
+    "domain_invalid": "Please enter a valid domain name (e.g. your-company.com)",
+    "domain_not_found": "We couldn't find this domain — maybe a typo?",
+    "website_not_found": "We couldn't reach this website — maybe a typo?",
+    "domain_checking": "Checking availability…",
+    "domain_available": "Available!",
+    "domain_taken": "Already taken — try a variation",
+    "email_title": "How many email addresses do you need?",
+    "email_sub": "You'll get addresses like you@your-company.com",
+    "email_opt1": "Just me",
+    "email_opt1_sub": "1 mailbox",
+    "email_opt2": "Small team",
+    "email_opt2_sub": "2–5 mailboxes",
+    "email_opt3": "Growing team",
+    "email_opt3_sub": "6–20 mailboxes",
+    "email_opt4": "Large organisation",
+    "email_opt4_sub": "20+ mailboxes",
+    "cloud_title": "How does your team handle files today?",
+    "cloud_opt1": "Everything on my laptop",
+    "cloud_opt2": "Google Drive",
+    "cloud_opt3": "Dropbox",
+    "cloud_opt4": "OneDrive / SharePoint",
+    "cloud_opt5": "Another cloud service",
+    "cloud_opt6": "No system yet",
+    "vpn_title": "Does your team need secure remote access?",
+    "vpn_info_title": "What is a VPN?",
+    "vpn_info_body": "A VPN (Virtual Private Network) encrypts your internet connection and lets your team access company resources safely from anywhere — home, a café, or abroad. Essential for remote work.",
+    "vpn_yes": "Yes, we work remotely",
+    "vpn_no": "No, we're office-based",
+    "support_title": "Would your team benefit from on-call tech support?",
+    "support_info_title": "Our Tech Support plan",
+    "support_info_body": "You and your team get a direct line to our experts for any tech question — setting up a new laptop, fixing a printer, sorting out software. Think of it as having an IT team on speed dial.",
+    "support_yes": "Yes, that would be a lifesaver",
+    "support_no": "No, we're comfortable with tech",
+    "passwords_title": "How does your team manage passwords today?",
+    "passwords_opt1": "Same password for everything",
+    "passwords_opt2": "Saved in the browser",
+    "passwords_opt3": "Written on paper",
+    "passwords_opt4": "We memorise them",
+    "passwords_opt5": "We already use a manager",
+    "passwords_opt6": "No real strategy",
+    "contact_title": "Almost there!",
+    "contact_sub": "How would you prefer us to contact you?",
+    "contact_mode_email": "By email",
+    "contact_mode_phone": "By phone",
+    "contact_phone_placeholder": "06 11 22 33 44",
+    "contact_name_placeholder": "Your name",
+    "contact_email_placeholder": "your@email.com",
+    "contact_error": "Something went wrong. You can reach us directly:",
+    "contact_error_link": "Send my request by email →",
+    "contact_invalid_email": "Invalid email address",
+    "contact_invalid_phone": "Invalid phone number",
+    "contact_phone_note": "Phone numbers outside France will be contacted via WhatsApp.",
+    "contact_submit": "Contact me",
+    "contact_privacy": "No spam. We'll reach out within 24 hours.",
+    "done_title": "You're all set!",
+    "done_sub": "We've received your setup request. Our team will reach out within 24 hours to get everything in motion.",
+    "done_cta": "Explore our services",
+    "tracker_contact": "Your details",
+    "review_title": "Here's your selection",
+    "review_sub": "Review your services and estimated pricing before we get in touch.",
+    "review_item_website_build": "Website design & build",
+    "review_item_website_hosting": "Website hosting",
+    "review_item_email": "Email hosting",
+    "review_item_domain_new": "Domain registration",
+    "review_item_domain_renew": "Domain renewal",
+    "review_item_support": "Tech support",
+    "review_support_note": "50 €/month · no commitment",
+    "review_period_once": "one-time",
+    "review_period_year": "/ year",
+    "review_period_month": "/ month",
+    "review_group_once": "One-time payment",
+    "review_group_year": "Annual",
+    "review_group_month": "Monthly",
+    "review_subtotal": "Subtotal",
+    "review_discount": "Discount",
+    "review_total": "Total",
+    "review_total_note": "All prices excl. VAT — final amount confirmed on your onboarding call.",
+    "review_total_tooltip_recurring": "then {amount} / year recurring",
+    "review_total_tooltip_once": "incl. {amount} one-time",
+    "review_domain_then_renew": "then renews at",
+    "review_domain_price_unknown": "We couldn't retrieve the exact price for this TLD. Domain names typically cost between 10 and 15 € per year — the exact amount will be confirmed on your onboarding call.",
+    "review_coupon_placeholder": "Coupon code",
+    "review_coupon_apply": "Apply",
+    "review_coupon_valid": "Applied!",
+    "review_coupon_invalid": "Invalid code",
+    "review_coupon_demo_title": "Welcome to the club!",
+    "review_coupon_demo_sub": "Your 500€ discount has been applied. We can't wait to get you set up."
   }
 }

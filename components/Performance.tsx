@@ -1,10 +1,10 @@
-import { TrendingUp, Server, Globe2, Clock } from "lucide-react";
+import { Clock, TrendingUp, Package, Globe2 } from "lucide-react";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 type Props = { t: Dictionary["performance"] };
 
-const metricIcons = [Clock, TrendingUp, Server, Globe2];
-const metricValues = ["18ms", "99.97%", "NVMe", "30+"];
+const metricIcons = [Clock, TrendingUp, Package, Globe2];
+const metricValues = ["<48h", "50+", "<24h", "99.9%"];
 const metricColors = [
   { text: "text-cyan-400", bg: "bg-cyan-400/10" },
   { text: "text-emerald-400", bg: "bg-emerald-400/10" },
@@ -14,7 +14,7 @@ const metricColors = [
 
 export default function Performance({ t }: Props) {
   return (
-    <section id="performance" className="py-20 sm:py-28 bg-slate-950">
+    <section id="how-it-works" className="py-20 sm:py-28 bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: copy */}

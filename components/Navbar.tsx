@@ -21,7 +21,7 @@ export default function Navbar({ t, lang }: Props) {
   const navLinks = [
     { label: t.features, href: "#features" },
     { label: t.pricing, href: "#pricing" },
-    { label: t.performance, href: "#performance" },
+    { label: t.performance, href: "#how-it-works" },
     { label: t.faq, href: "#faq" },
   ];
 
@@ -71,12 +71,12 @@ export default function Navbar({ t, lang }: Props) {
             >
               {otherLang}
             </Link>
-            <a
-              href="mailto:contact@zapia.fr"
+            <button
+              onClick={() => { window.dispatchEvent(new CustomEvent("start-onboarding")); window.scrollTo({ top: 0, behavior: "smooth" }); }}
               className="text-sm font-semibold px-4 py-2 rounded-lg gradient-bg text-white hover:opacity-90 transition-opacity"
             >
               {t.getstarted}
-            </a>
+            </button>
           </div>
 
           {/* Mobile menu toggle */}
@@ -135,13 +135,12 @@ export default function Navbar({ t, lang }: Props) {
             >
               {otherLang === "en" ? "🇬🇧 English" : "🇫🇷 Français"}
             </Link>
-            <a
-              href="mailto:contact@zapia.fr"
-              onClick={() => setOpen(false)}
+            <button
+              onClick={() => { setOpen(false); window.dispatchEvent(new CustomEvent("start-onboarding")); window.scrollTo({ top: 0, behavior: "smooth" }); }}
               className="px-4 py-3 rounded-xl font-semibold text-sm gradient-bg text-white text-center hover:opacity-90 transition-opacity"
             >
               {t.getstarted}
-            </a>
+            </button>
           </div>
         </div>
       )}

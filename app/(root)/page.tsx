@@ -15,7 +15,7 @@ export default async function Home() {
     <>
       <Navbar t={dict.nav} lang="fr" />
       <main>
-        <Hero t={dict.hero} />
+        <Hero t={dict.onboarding} />
         <Features t={dict.features} />
         <Performance t={dict.performance} />
         <Pricing t={dict.pricing} />
