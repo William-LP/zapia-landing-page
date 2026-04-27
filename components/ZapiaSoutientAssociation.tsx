@@ -272,7 +272,7 @@ export default function ZapiaDesPage() {
                         <span className="text-slate-400 text-sm">/ an</span>
                       </div>
                       <p className="text-xs text-slate-500 mt-1">
-                        Soit moins de 8,50&nbsp;€ par mois, tout compris
+                        Soit moins de 8,50&nbsp;€ par mois · Prix HT
                       </p>
                     </div>
 
