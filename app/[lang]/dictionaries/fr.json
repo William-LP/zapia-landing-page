@@ -20,6 +20,7 @@
     "pricing": "Tarifs",
     "performance": "Comment ça marche",
     "faq": "FAQ",
+    "blog": "Blog",
     "signin": "Connexion",
     "getstarted": "Commencer"
   },
@@ -458,5 +459,21 @@
     "review_coupon_invalid": "Code invalide",
     "review_coupon_demo_title": "Bienvenue dans l'aventure !",
     "review_coupon_demo_sub": "Votre remise de 500€ a bien été appliquée. On a hâte de tout mettre en place pour vous."
+  },
+  "blog": {
+    "badge": "Conseils & guides",
+    "headline": "Le blog",
+    "headline_highlight": "Zapia",
+    "sub": "Guides pratiques sur les sites web, l'email, l'hébergement et tout le reste — pour prendre les meilleures décisions pour votre entreprise.",
+    "search_placeholder": "Rechercher des articles…",
+    "all_categories": "Tout",
+    "read_more": "Lire l'article",
+    "min_read": "min de lecture",
+    "back_home": "Retour à l'accueil",
+    "no_results": "Aucun article trouvé",
+    "no_results_sub": "Essayez un autre mot-clé ou effacez vos filtres.",
+    "clear_filters": "Effacer les filtres",
+    "results_count": "{n} article",
+    "results_count_plural": "{n} articles"
   }
 }

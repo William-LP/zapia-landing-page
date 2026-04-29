@@ -20,6 +20,7 @@
     "pricing": "Pricing",
     "performance": "How it works",
     "faq": "FAQ",
+    "blog": "Blog",
     "signin": "Sign in",
     "getstarted": "Get started"
   },
@@ -291,6 +292,22 @@
     "button": "Get started today",
     "trust_moneyback": "No hidden fees, ever",
     "trust_france": "Hosted in France · EU data sovereignty"
+  },
+  "blog": {
+    "badge": "Insights & guides",
+    "headline": "The Zapia",
+    "headline_highlight": "Blog",
+    "sub": "Practical guides on websites, email, hosting, and everything in between — so you can make the best decisions for your business.",
+    "search_placeholder": "Search articles…",
+    "all_categories": "All",
+    "read_more": "Read article",
+    "min_read": "min read",
+    "back_home": "Back to home",
+    "no_results": "No articles found",
+    "no_results_sub": "Try a different keyword or clear your filters.",
+    "clear_filters": "Clear filters",
+    "results_count": "{n} article",
+    "results_count_plural": "{n} articles"
   },
   "footer": {
     "tagline": "Your complete digital infrastructure, set up and managed by experts from day one.",

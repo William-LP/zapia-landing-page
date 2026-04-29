@@ -18,11 +18,15 @@ export default function Navbar({ t, lang }: Props) {
   const otherLang = lang === "en" ? "fr" : "en";
   const otherPath = pathname === "/" ? `/${otherLang}` : pathname.replace(`/${lang}`, `/${otherLang}`);
 
+  const isHome = pathname === `/${lang}` || pathname === "/";
+  const home = `/${lang}`;
+
   const navLinks = [
-    { label: t.features, href: "#features" },
-    { label: t.pricing, href: "#pricing" },
-    { label: t.performance, href: "#how-it-works" },
-    { label: t.faq, href: "#faq" },
+    { label: t.features, href: isHome ? "#features" : `${home}#features` },
+    { label: t.pricing, href: isHome ? "#pricing" : `${home}#pricing` },
+    { label: t.performance, href: isHome ? "#how-it-works" : `${home}#how-it-works` },
+    { label: t.faq, href: isHome ? "#faq" : `${home}#faq` },
+    { label: t.blog, href: `/${lang}/blog` },
   ];
 
   useEffect(() => {
