@@ -86,6 +86,7 @@ export const articles: Article[] = [
     },
     date: "2025-05-01",
     readTime: 7,
+    coverImage: "/blog/why-use-pdf-over-docx/adobe-icon.png",
   },
   {
     slug: {
