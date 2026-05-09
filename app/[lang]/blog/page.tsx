@@ -49,7 +49,7 @@ export default async function BlogPage({ params }: PageProps<"/[lang]/blog">) {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
-      <Navbar t={dict.nav} lang={lang} />
+      <Navbar t={dict.nav} lang={lang} lightBg />
 
       {/* Page header */}
       <div className="border-b border-slate-200 bg-slate-50 pt-20">

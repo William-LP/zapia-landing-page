@@ -11,9 +11,11 @@ type Props = {
   lang: string;
   /** Override the auto-computed alternate-language URL. Use when the slug differs between languages. */
   altPath?: string;
+  /** Set to true on pages with a light background so the logo is readable before the user scrolls. */
+  lightBg?: boolean;
 };
 
-export default function Navbar({ t, lang, altPath }: Props) {
+export default function Navbar({ t, lang, altPath, lightBg }: Props) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
@@ -52,7 +54,7 @@ export default function Navbar({ t, lang, altPath }: Props) {
               <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
                 <Zap className="w-4 h-4 text-white" />
               </div>
-              <span className={`font-bold text-xl transition-all duration-300 ${scrolled ? "text-slate-900" : "text-white"}`}>zapia</span>
+              <span className={`font-bold text-xl transition-all duration-300 ${scrolled || lightBg ? "text-slate-900" : "text-white"}`}>zapia</span>
             </a>
 
             {/* Desktop nav */}

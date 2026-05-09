@@ -371,7 +371,7 @@ export default async function ArticlePage({
       <Suspense fallback={null}>
         <ClientScrollAnchor />
       </Suspense>
-      <Navbar t={dict.nav} lang={lang} altPath={altPath} />
+      <Navbar t={dict.nav} lang={lang} altPath={altPath} lightBg />
 
       {/* Breadcrumb bar */}
       <div className="border-b border-slate-200 bg-slate-50 pt-16">
