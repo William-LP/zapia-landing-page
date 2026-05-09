@@ -68,6 +68,7 @@ export const articles: Article[] = [
     },
     date: "2025-05-01",
     readTime: 6,
+    coverImage: "/blog/how-to-update-your-email-signature/cover.png"
   },
   {
     slug: {
