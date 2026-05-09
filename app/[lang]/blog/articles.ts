@@ -143,6 +143,7 @@ export const articles: Article[] = [
     },
     date: "2026-05-11",
     readTime: 8,
+    coverImage: "/blog/color-theory-harmonies/cover.svg",
   },
 ];
 
