@@ -26,6 +26,9 @@ import CreatePdfGuideContent, {
 import SignPdfGuideContent, {
   toc as signPdfToc,
 } from "@/app/[lang]/blog/content/sign-pdf-guide";
+import ColorTheoryGuideContent, {
+  toc as colorTheoryToc,
+} from "@/app/[lang]/blog/content/color-theory-guide";
 
 const BASE_URL = "https://zapia.fr";
 
@@ -269,6 +272,44 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 7,
     },
   ],
+  "color-theory-harmonies": [
+    {
+      slug: {
+        en: "why-use-pdf-over-docx",
+        fr: "pourquoi-utiliser-le-pdf-plutot-que-docx",
+      },
+      categories: [{ en: "Documents", fr: "Bureautique" }],
+      title: {
+        en: "Why you should send PDFs instead of Word documents",
+        fr: "Pourquoi envoyer des PDF plutôt que des documents Word",
+      },
+      readTime: 7,
+    },
+    {
+      slug: {
+        en: "why-use-a-professional-domain-email",
+        fr: "pourquoi-utiliser-une-adresse-email-professionnelle",
+      },
+      categories: [{ en: "Email", fr: "Email" }],
+      title: {
+        en: "Why @yourcompany.com beats @gmail.com for business",
+        fr: "Pourquoi @votreentreprise.fr vaut mieux que @gmail.com",
+      },
+      readTime: 7,
+    },
+    {
+      slug: {
+        en: "how-to-choose-the-right-domain-name",
+        fr: "comment-choisir-son-nom-de-domaine",
+      },
+      categories: [{ en: "Domains", fr: "Domaines" }],
+      title: {
+        en: "How to choose the right domain name for your business",
+        fr: "Comment choisir le bon nom de domaine pour votre entreprise",
+      },
+      readTime: 8,
+    },
+  ],
 };
 
 // Keyed by EN slug.
@@ -302,6 +343,10 @@ const contentMap: Record<
   "how-to-sign-a-pdf": {
     component: SignPdfGuideContent,
     toc: signPdfToc,
+  },
+  "color-theory-harmonies": {
+    component: ColorTheoryGuideContent,
+    toc: colorTheoryToc,
   },
 };
 

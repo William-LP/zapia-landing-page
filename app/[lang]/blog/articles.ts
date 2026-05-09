@@ -25,7 +25,7 @@ export const articles: Article[] = [
       en: "A Gmail address works fine for personal use. For business, it quietly signals that you haven't quite set up shop yet. Here's what changes when you switch to a domain email — and why it matters more than you'd expect.",
       fr: "Une adresse Gmail fonctionne très bien pour un usage personnel. Pour une entreprise, elle signale discrètement que vous n'êtes pas encore tout à fait installé. Voici ce qui change quand vous passez à un email au nom de votre domaine.",
     },
-    date: "2025-04-29",
+    date: "2026-04-28",
     readTime: 7,
     coverImage: "/blog/why-use-a-professional-domain-email/email pro.png",
   },
@@ -44,7 +44,7 @@ export const articles: Article[] = [
       en: "Your domain name is one of the most permanent decisions you'll make for your business. Get it wrong and you'll either pay to fix it later or live with the consequences. Here's everything you need to check before you buy.",
       fr: "Votre nom de domaine est l'une des décisions les plus durables que vous prendrez pour votre entreprise. Une mauvaise décision vous coûtera cher à corriger — ou vous vivrez avec les conséquences. Voici tout ce qu'il faut vérifier avant d'acheter.",
     },
-    date: "2025-04-29",
+    date: "2026-04-30",
     readTime: 8,
     coverImage: "/blog/how-to-choose-the-right-domain-name/domain-name.png",
   },
@@ -66,7 +66,7 @@ export const articles: Article[] = [
       en: "A step-by-step guide to updating your email signature in the most common email clients — no technical knowledge required.",
       fr: "Un guide pas à pas pour modifier votre signature email dans les principaux clients de messagerie — aucune connaissance technique requise.",
     },
-    date: "2025-05-01",
+    date: "2026-05-01",
     readTime: 6,
     coverImage: "/blog/how-to-update-your-email-signature/cover.png"
   },
@@ -85,7 +85,7 @@ export const articles: Article[] = [
       en: "Word files look different on every computer. PDFs don't. Here's why PDF is the right format for anything you consider final — and what you risk by sending .docx.",
       fr: "Un fichier Word s'affiche différemment sur chaque ordinateur. Un PDF, non. Voici pourquoi le PDF est le bon format pour tout document finalisé — et ce que vous risquez en envoyant du .docx.",
     },
-    date: "2025-05-01",
+    date: "2026-05-05",
     readTime: 7,
     coverImage: "/blog/why-use-pdf-over-docx/pdf.png",
   },
@@ -104,7 +104,7 @@ export const articles: Article[] = [
       en: "You don't need special software to create a PDF. Every major platform has a built-in way to export any document, webpage, or image as a PDF — here's how to do it on Windows, macOS, and in the most common apps.",
       fr: "Vous n'avez pas besoin d'un logiciel spécial pour créer un PDF. Chaque plateforme majeure dispose d'un moyen intégré d'exporter n'importe quel document, page web ou image en PDF — voici comment faire sur Windows, macOS et dans les applications les plus courantes.",
     },
-    date: "2025-05-02",
+    date: "2026-05-02",
     readTime: 5,
   },
   {
@@ -122,9 +122,27 @@ export const articles: Article[] = [
       en: "Signing a PDF doesn't require printing it out. Whether you're on a Mac, Windows PC, iPhone, or Android, there's a built-in or free tool that lets you add your signature in under a minute.",
       fr: "Signer un PDF ne nécessite pas de l'imprimer. Que vous soyez sur Mac, PC Windows, iPhone ou Android, il existe un outil intégré ou gratuit qui vous permet d'ajouter votre signature en moins d'une minute.",
     },
-    date: "2025-05-02",
+    date: "2026-05-08",
     readTime: 6,
-    coverImage: "/blog/how-to-sign-a-pdf/sign-pdf.png"
+    coverImage: "/blog/how-to-sign-a-pdf/sign-pdf.png",
+  },
+  {
+    slug: {
+      en: "color-theory-harmonies",
+      fr: "theorie-des-couleurs-harmonies",
+    },
+    categories: [{ en: "Design", fr: "Design" }],
+    tags: ["design", "colors", "theory", "ui"],
+    title: {
+      en: "Color theory: why some combinations just work",
+      fr: "Théorie des couleurs : pourquoi certaines combinaisons fonctionnent",
+    },
+    excerpt: {
+      en: "Complementary, analogous, triadic, split-complementary — color harmonies are not arbitrary. They are computed from the color wheel using simple geometry, and they feel good for reasons rooted in how the human visual system works.",
+      fr: "Complémentaire, analogue, triadique, complémentaire divisé — les harmonies de couleurs ne sont pas arbitraires. Elles se calculent sur la roue chromatique par géométrie simple, et elles fonctionnent pour des raisons ancrées dans le fonctionnement du système visuel humain.",
+    },
+    date: "2026-05-11",
+    readTime: 8,
   },
 ];
 
