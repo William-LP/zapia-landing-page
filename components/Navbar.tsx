@@ -9,14 +9,16 @@ import type { Dictionary } from "@/app/[lang]/dictionaries";
 type Props = {
   t: Dictionary["nav"];
   lang: string;
+  /** Override the auto-computed alternate-language URL. Use when the slug differs between languages. */
+  altPath?: string;
 };
 
-export default function Navbar({ t, lang }: Props) {
+export default function Navbar({ t, lang, altPath }: Props) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const otherLang = lang === "en" ? "fr" : "en";
-  const otherPath = pathname === "/" ? `/${otherLang}` : pathname.replace(`/${lang}`, `/${otherLang}`);
+  const otherPath = altPath ?? (pathname === "/" ? `/${otherLang}` : pathname.replace(`/${lang}`, `/${otherLang}`));
 
   const isHome = pathname === `/${lang}` || pathname === "/";
   const home = `/${lang}`;

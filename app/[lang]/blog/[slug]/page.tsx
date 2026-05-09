@@ -228,13 +228,15 @@ export default async function ArticlePage({
   );
 
   const backLabel = lang === "fr" ? "Retour au blog" : "Back to blog";
+  const altLang = lang === "fr" ? "en" : "fr";
+  const altPath = `/${altLang}/blog/${article.slug[altLang]}`;
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Suspense fallback={null}>
         <ClientScrollAnchor />
       </Suspense>
-      <Navbar t={dict.nav} lang={lang} />
+      <Navbar t={dict.nav} lang={lang} altPath={altPath} />
 
       {/* Breadcrumb bar */}
       <div className="border-b border-slate-200 bg-slate-50 pt-16">
