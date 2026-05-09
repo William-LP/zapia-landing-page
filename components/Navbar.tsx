@@ -39,64 +39,63 @@ export default function Navbar({ t, lang, altPath }: Props) {
 
   return (
     <>
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-white/95 backdrop-blur-sm shadow-sm border-b border-slate-100"
           : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
-              <Zap className="w-4 h-4 text-white" />
-            </div>
-            <span className="font-bold text-xl text-slate-900">zapia</span>
-          </a>
+          }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <a href="#" className="flex items-center gap-2 group">
+              <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
+                <Zap className="w-4 h-4 text-white" />
+              </div>
+              <span className={`font-bold text-xl transition-all duration-300 ${scrolled ? "text-slate-900" : "text-white"}`}>zapia</span>
+            </a>
 
-          {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+            {/* Desktop nav */}
+            <nav className="hidden md:flex items-center gap-8">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+
+            {/* Desktop CTA + language switcher */}
+            <div className="hidden md:flex items-center gap-3">
+              <Link
+                href={otherPath}
+                className="text-xs font-semibold px-2.5 py-1 rounded-md border border-slate-200 text-slate-500 hover:text-indigo-600 hover:border-indigo-300 transition-colors uppercase"
               >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+                {otherLang}
+              </Link>
+              <button
+                onClick={() => { window.dispatchEvent(new CustomEvent("start-onboarding")); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                className="text-sm font-semibold px-4 py-2 rounded-lg gradient-bg text-white hover:opacity-90 transition-opacity"
+              >
+                {t.getstarted}
+              </button>
+            </div>
 
-          {/* Desktop CTA + language switcher */}
-          <div className="hidden md:flex items-center gap-3">
-            <Link
-              href={otherPath}
-              className="text-xs font-semibold px-2.5 py-1 rounded-md border border-slate-200 text-slate-500 hover:text-indigo-600 hover:border-indigo-300 transition-colors uppercase"
-            >
-              {otherLang}
-            </Link>
+            {/* Mobile menu toggle */}
             <button
-              onClick={() => { window.dispatchEvent(new CustomEvent("start-onboarding")); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              className="text-sm font-semibold px-4 py-2 rounded-lg gradient-bg text-white hover:opacity-90 transition-opacity"
+              className="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+              onClick={() => setOpen(!open)}
+              aria-label="Toggle menu"
             >
-              {t.getstarted}
+              {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
-
-          {/* Mobile menu toggle */}
-          <button
-            className="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
-            onClick={() => setOpen(!open)}
-            aria-label="Toggle menu"
-          >
-            {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
         </div>
-      </div>
 
-    </header>
+      </header>
 
       {/* Mobile menu — full-screen overlay, rendered outside <header> so it covers the whole viewport */}
       {open && (
