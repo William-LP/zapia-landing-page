@@ -18,10 +18,14 @@ export default function ClientScrollAnchor() {
   useEffect(() => {
     if (!client) return;
     const sectionId = clientToSection[client] ?? client;
-    const el = document.getElementById(sectionId);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    // Defer until the browser has finished painting the full page layout.
+    // Without this, sections near the bottom scroll to the wrong position
+    // because the page height isn't final yet at React hydration time.
+    const timer = setTimeout(() => {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 120);
+    return () => clearTimeout(timer);
   }, [client]);
 
   return null;
