@@ -21,16 +21,20 @@ import EmailSignatureGuideContent, {
 const BASE_URL = "https://zapia.fr";
 
 type RelatedArticle = {
-  slug: string;
+  slug: { en: string; fr: string };
   categories: { en: string; fr: string }[];
   title: { en: string; fr: string };
   readTime: number;
 };
 
+// Keys are EN slugs. Slug objects: real articles use their FR slug; placeholders repeat the EN slug.
 const relatedBySlug: Record<string, RelatedArticle[]> = {
   "how-to-choose-the-right-domain-name": [
     {
-      slug: "why-use-a-professional-domain-email",
+      slug: {
+        en: "why-use-a-professional-domain-email",
+        fr: "pourquoi-utiliser-une-adresse-email-professionnelle",
+      },
       categories: [{ en: "Email", fr: "Email" }],
       title: {
         en: "Why @yourcompany.com beats @gmail.com for business",
@@ -39,7 +43,10 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 7,
     },
     {
-      slug: "how-to-transfer-your-domain-without-losing-seo",
+      slug: {
+        en: "how-to-transfer-your-domain-without-losing-seo",
+        fr: "how-to-transfer-your-domain-without-losing-seo",
+      },
       categories: [{ en: "Domains", fr: "Domaines" }],
       title: {
         en: "How to transfer your domain without losing your SEO",
@@ -48,7 +55,10 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 6,
     },
     {
-      slug: "5-signs-your-website-is-hurting-your-credibility",
+      slug: {
+        en: "5-signs-your-website-is-hurting-your-credibility",
+        fr: "5-signs-your-website-is-hurting-your-credibility",
+      },
       categories: [{ en: "Digital presence", fr: "Présence numérique" }],
       title: {
         en: "5 signs your website is hurting your credibility",
@@ -59,7 +69,10 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
   ],
   "why-use-a-professional-domain-email": [
     {
-      slug: "how-to-update-your-email-signature",
+      slug: {
+        en: "how-to-update-your-email-signature",
+        fr: "comment-modifier-votre-signature-email",
+      },
       categories: [
         { en: "Email", fr: "Email" },
         { en: "Tutorial", fr: "Tutoriel" },
@@ -71,7 +84,10 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 6,
     },
     {
-      slug: "how-to-choose-the-right-domain-name",
+      slug: {
+        en: "how-to-choose-the-right-domain-name",
+        fr: "comment-choisir-son-nom-de-domaine",
+      },
       categories: [{ en: "Domains", fr: "Domaines" }],
       title: {
         en: "How to choose the right domain name for your business",
@@ -80,7 +96,10 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 8,
     },
     {
-      slug: "5-signs-your-website-is-hurting-your-credibility",
+      slug: {
+        en: "5-signs-your-website-is-hurting-your-credibility",
+        fr: "5-signs-your-website-is-hurting-your-credibility",
+      },
       categories: [{ en: "Digital presence", fr: "Présence numérique" }],
       title: {
         en: "5 signs your website is hurting your credibility",
@@ -91,7 +110,10 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
   ],
   "how-to-update-your-email-signature": [
     {
-      slug: "why-use-a-professional-domain-email",
+      slug: {
+        en: "why-use-a-professional-domain-email",
+        fr: "pourquoi-utiliser-une-adresse-email-professionnelle",
+      },
       categories: [{ en: "Email", fr: "Email" }],
       title: {
         en: "Why @yourcompany.com beats @gmail.com for business",
@@ -100,7 +122,10 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 7,
     },
     {
-      slug: "how-to-choose-the-right-domain-name",
+      slug: {
+        en: "how-to-choose-the-right-domain-name",
+        fr: "comment-choisir-son-nom-de-domaine",
+      },
       categories: [{ en: "Domains", fr: "Domaines" }],
       title: {
         en: "How to choose the right domain name for your business",
@@ -109,7 +134,10 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 8,
     },
     {
-      slug: "how-to-set-up-spf-dkim-records",
+      slug: {
+        en: "how-to-set-up-spf-dkim-records",
+        fr: "how-to-set-up-spf-dkim-records",
+      },
       categories: [{ en: "Email", fr: "Email" }],
       title: {
         en: "How to set up SPF and DKIM records for your domain",
@@ -120,6 +148,7 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
   ],
 };
 
+// Keyed by EN slug.
 const contentMap: Record<
   string,
   {
@@ -143,7 +172,7 @@ const contentMap: Record<
 
 export async function generateStaticParams() {
   return locales.flatMap((lang) =>
-    articles.map((a) => ({ lang, slug: a.slug }))
+    articles.map((a) => ({ lang, slug: a.slug[lang] }))
   );
 }
 
@@ -152,17 +181,17 @@ export async function generateMetadata({
 }: PageProps<"/[lang]/blog/[slug]">): Promise<Metadata> {
   const { lang, slug } = await params;
   if (!hasLocale(lang)) return {};
-  const article = articles.find((a) => a.slug === slug);
+  const article = articles.find((a) => a.slug[lang] === slug);
   if (!article) return {};
 
-  const url = `${BASE_URL}/${lang}/blog/${slug}`;
+  const url = `${BASE_URL}/${lang}/blog/${article.slug[lang]}`;
   return {
     title: `${article.title[lang]} — Zapia Blog`,
     description: article.excerpt[lang],
     alternates: {
       canonical: url,
       languages: Object.fromEntries(
-        locales.map((l) => [l, `${BASE_URL}/${l}/blog/${slug}`])
+        locales.map((l) => [l, `${BASE_URL}/${l}/blog/${article.slug[l]}`])
       ) as Record<string, string>,
     },
     openGraph: {
@@ -182,16 +211,16 @@ export default async function ArticlePage({
   const { lang, slug } = await params;
   if (!hasLocale(lang)) notFound();
 
-  const article = articles.find((a) => a.slug === slug);
+  const article = articles.find((a) => a.slug[lang] === slug);
   if (!article) notFound();
 
-  const content = contentMap[slug];
+  const content = contentMap[article.slug.en];
   if (!content) notFound();
 
   const dict = await getDictionary(lang);
   const { component: ArticleContent, toc: articleToc } = content;
   const tocItems = articleToc[lang];
-  const related = relatedBySlug[slug] ?? [];
+  const related = relatedBySlug[article.slug.en] ?? [];
 
   const formattedDate = new Date(article.date).toLocaleDateString(
     lang === "fr" ? "fr-FR" : "en-GB",
@@ -291,8 +320,8 @@ export default async function ArticlePage({
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {related.map((r) => (
                 <Link
-                  key={r.slug}
-                  href={`/${lang}/blog/${r.slug}`}
+                  key={r.slug.en}
+                  href={`/${lang}/blog/${r.slug[lang]}`}
                   className="group flex flex-col gap-3 p-6 bg-white rounded-2xl border border-slate-200 hover:border-indigo-200 hover:shadow-sm transition-all"
                 >
                   <div className="flex items-center justify-between">

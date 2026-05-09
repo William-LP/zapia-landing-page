@@ -1,5 +1,5 @@
 export type Article = {
-  slug: string;
+  slug: { en: string; fr: string };
   categories: { en: string; fr: string }[];
   tags: string[];
   title: { en: string; fr: string };
@@ -10,12 +10,15 @@ export type Article = {
 
 export const articles: Article[] = [
   {
-    slug: "why-use-a-professional-domain-email",
+    slug: {
+      en: "why-use-a-professional-domain-email",
+      fr: "pourquoi-utiliser-une-adresse-email-professionnelle",
+    },
     categories: [{ en: "Email", fr: "Email" }],
     tags: ["email", "branding", "deliverability"],
     title: {
       en: "Why @yourcompany.com beats @gmail.com for business",
-      fr: "Pourquoi @votreentreprise.fr vaut mieux que @gmail.com",
+      fr: "Pourquoi @votre-entreprise.fr vaut mieux que @gmail.com",
     },
     excerpt: {
       en: "A Gmail address works fine for personal use. For business, it quietly signals that you haven't quite set up shop yet. Here's what changes when you switch to a domain email — and why it matters more than you'd expect.",
@@ -25,7 +28,10 @@ export const articles: Article[] = [
     readTime: 7,
   },
   {
-    slug: "how-to-choose-the-right-domain-name",
+    slug: {
+      en: "how-to-choose-the-right-domain-name",
+      fr: "comment-choisir-son-nom-de-domaine",
+    },
     categories: [{ en: "Domains", fr: "Domaines" }],
     tags: ["domain", "branding", "email"],
     title: {
@@ -40,7 +46,10 @@ export const articles: Article[] = [
     readTime: 8,
   },
   {
-    slug: "how-to-update-your-email-signature",
+    slug: {
+      en: "how-to-update-your-email-signature",
+      fr: "comment-modifier-votre-signature-email",
+    },
     categories: [
       { en: "Email", fr: "Email" },
       { en: "Tutorial", fr: "Tutoriel" },

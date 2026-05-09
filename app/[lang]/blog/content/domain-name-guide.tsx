@@ -672,8 +672,8 @@ function ContentFR() {
         </P>
         <P>
           On développe ce sujet en détail dans notre article :{" "}
-          <InlineLink href="/fr/blog/why-use-a-professional-domain-email">
-            Pourquoi @votreentreprise.fr vaut mieux que @gmail.com
+          <InlineLink href="/fr/blog/pourquoi-utiliser-une-adresse-email-professionnelle">
+            Pourquoi @votre-entreprise.fr vaut mieux que @gmail.com
           </InlineLink>
           .
         </P>
@@ -777,8 +777,8 @@ function ContentFR() {
         </P>
         <Ul>
           <Li>
-            Si vous achetez <em>votreentreprise.fr</em>, envisagez aussi{" "}
-            <em>votreentreprise.com</em>
+            Si vous achetez <em>votre-entreprise.fr</em>, envisagez aussi{" "}
+            <em>votre-entreprise.com</em>
           </Li>
           <Li>
             Achetez les fautes d'orthographe évidentes si le domaine est

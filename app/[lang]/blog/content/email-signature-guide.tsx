@@ -582,7 +582,7 @@ function ContentFR() {
         <Callout>
           Vous envoyez encore vos emails professionnels depuis une adresse
           @gmail.com ?{" "}
-          <InlineLink href="/fr/blog/why-use-a-professional-domain-email">
+          <InlineLink href="/fr/blog/pourquoi-utiliser-une-adresse-email-professionnelle">
             Voici pourquoi passer à une adresse au nom de domaine fait la
             différence
           </InlineLink>{" "}

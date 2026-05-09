@@ -566,7 +566,7 @@ function ContentFR() {
         </P>
         <Comparison
           bad="Lié à un compte Gmail que vous ne contrôlez pas"
-          good="hello@votreentreprise.fr — changez de prestataire quand vous voulez"
+          good="hello@votre-entreprise.fr — changez de prestataire quand vous voulez"
         />
         <P>
           Vous pouvez démarrer sur Google Workspace, passer à Microsoft 365,
@@ -584,11 +584,11 @@ function ContentFR() {
           de créer des adresses structurées et fonctionnelles dès le départ :
         </P>
         <Ul>
-          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">support@votreentreprise.fr</code> — service client</Li>
-          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">commercial@votreentreprise.fr</code> — leads entrants</Li>
-          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">facturation@votreentreprise.fr</code> — paiements et factures</Li>
-          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">recrutement@votreentreprise.fr</code> — ressources humaines</Li>
-          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">bonjour@votreentreprise.fr</code> — contact général</Li>
+          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">support@votre-entreprise.fr</code> — service client</Li>
+          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">commercial@votre-entreprise.fr</code> — leads entrants</Li>
+          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">facturation@votre-entreprise.fr</code> — paiements et factures</Li>
+          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">recrutement@votre-entreprise.fr</code> — ressources humaines</Li>
+          <Li><code className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded text-xs">bonjour@votre-entreprise.fr</code> — contact général</Li>
         </Ul>
         <P>
           Ces adresses peuvent être des boîtes partagées, des listes de
@@ -722,7 +722,7 @@ function ContentFR() {
           Si vous avez déjà un domaine, mettre en place votre email est la
           prochaine étape logique. Si vous n'avez pas encore de domaine, lisez
           notre guide sur{" "}
-          <InlineLink href="/fr/blog/how-to-choose-the-right-domain-name">
+          <InlineLink href="/fr/blog/comment-choisir-son-nom-de-domaine">
             comment choisir le bon nom de domaine pour votre entreprise
           </InlineLink>{" "}
           — votre adresse email commence là.

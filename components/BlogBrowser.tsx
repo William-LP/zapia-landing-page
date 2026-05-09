@@ -255,8 +255,8 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
           ) : (
             filtered.map((article) => (
               <article
-                key={article.slug}
-                className="group py-7 flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8"
+                key={article.slug.en}
+                className="group py-7 flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8 relative cursor-pointer"
               >
                 {/* Left: date column (desktop) */}
                 <div className="hidden sm:flex flex-col items-end shrink-0 w-28 pt-1">
@@ -301,8 +301,8 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
 
                   <div className="flex items-center gap-4">
                     <Link
-                      href={`/${lang}/blog/${article.slug}`}
-                      className="inline-flex items-center gap-1.5 text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors group/link"
+                      href={`/${lang}/blog/${article.slug[lang]}`}
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors group/link after:absolute after:inset-0 after:content-['']"
                     >
                       {t.read_more}
                       <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 transition-transform" />
@@ -312,7 +312,7 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
                         <button
                           key={tag}
                           onClick={() => setSearch(tag)}
-                          className="text-xs text-slate-400 hover:text-slate-600 transition-colors"
+                          className="relative z-10 text-xs text-slate-400 hover:text-slate-600 transition-colors"
                         >
                           #{tag}
                         </button>
