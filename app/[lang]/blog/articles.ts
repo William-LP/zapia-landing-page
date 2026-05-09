@@ -46,6 +46,7 @@ export const articles: Article[] = [
     },
     date: "2025-04-29",
     readTime: 8,
+    coverImage: "/blog/how-to-choose-the-right-domain-name/domain-name.png",
   },
   {
     slug: {
