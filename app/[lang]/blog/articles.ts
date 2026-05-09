@@ -124,6 +124,7 @@ export const articles: Article[] = [
     },
     date: "2025-05-02",
     readTime: 6,
+    coverImage: "/blog/how-to-sign-a-pdf/sign-pdf.png"
   },
 ];
 
