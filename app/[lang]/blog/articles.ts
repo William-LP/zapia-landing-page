@@ -106,6 +106,7 @@ export const articles: Article[] = [
     },
     date: "2026-05-02",
     readTime: 5,
+    coverImage: "/blog/how-to-create-a-pdf/pdf.png"
   },
   {
     slug: {
