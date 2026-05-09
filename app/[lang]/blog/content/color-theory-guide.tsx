@@ -2,6 +2,88 @@ import { CheckCircle, AlertTriangle } from "lucide-react";
 
 type Lang = "en" | "fr";
 
+// ── Color wheel ───────────────────────────────────────────────────────────────
+
+function ColorWheel({ lang }: { lang: Lang }) {
+  const segments = 72; // 5° per segment
+  const cx = 160;
+  const cy = 160;
+  const outerR = 150;
+  const innerR = 60;
+  const step = 360 / segments;
+  const toRad = (deg: number) => (deg * Math.PI) / 180;
+
+  const slices = Array.from({ length: segments }, (_, i) => {
+    const startDeg = i * step;
+    const endDeg = startDeg + step + 0.5; // tiny overlap avoids gaps between slices
+    const midDeg = startDeg + step / 2;
+    const s = toRad(startDeg - 90);
+    const e = toRad(endDeg - 90);
+    const ox1 = cx + outerR * Math.cos(s);
+    const oy1 = cy + outerR * Math.sin(s);
+    const ox2 = cx + outerR * Math.cos(e);
+    const oy2 = cy + outerR * Math.sin(e);
+    const ix1 = cx + innerR * Math.cos(e);
+    const iy1 = cy + innerR * Math.sin(e);
+    const ix2 = cx + innerR * Math.cos(s);
+    const iy2 = cy + innerR * Math.sin(s);
+    const d = `M ${ox1} ${oy1} A ${outerR} ${outerR} 0 0 1 ${ox2} ${oy2} L ${ix1} ${iy1} A ${innerR} ${innerR} 0 0 0 ${ix2} ${iy2} Z`;
+    return { d, color: `hsl(${midDeg}, 75%, 55%)` };
+  });
+
+  const tickLabels = [
+    { deg: 0, label: "0° Red" },
+    { deg: 60, label: "60° Yellow" },
+    { deg: 120, label: "120° Green" },
+    { deg: 180, label: "180° Cyan" },
+    { deg: 240, label: "240° Blue" },
+    { deg: 300, label: "300° Magenta" },
+  ];
+
+  const caption =
+    lang === "fr"
+      ? "La roue chromatique — la teinte (H) comme angle de 0° à 360°"
+      : "The color wheel — hue (H) as an angle from 0° to 360°";
+
+  return (
+    <figure className="flex flex-col items-center gap-3 my-8">
+      <svg
+        viewBox="0 0 320 320"
+        width="280"
+        height="280"
+        aria-label={caption}
+        role="img"
+      >
+        {slices.map((s, i) => (
+          <path key={i} d={s.d} fill={s.color} />
+        ))}
+        <circle cx={cx} cy={cy} r={innerR - 2} fill="white" />
+        {tickLabels.map(({ deg, label }) => {
+          const rad = toRad(deg - 90);
+          const r = outerR + 18;
+          return (
+            <text
+              key={deg}
+              x={cx + r * Math.cos(rad)}
+              y={cy + r * Math.sin(rad)}
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fontSize="10"
+              fill="#94a3b8"
+              fontFamily="ui-monospace, monospace"
+            >
+              {label.split(" ")[0]}
+            </text>
+          );
+        })}
+      </svg>
+      <figcaption className="text-xs text-slate-400 text-center">
+        {caption}
+      </figcaption>
+    </figure>
+  );
+}
+
 // ── Primitives ────────────────────────────────────────────────────────────────
 
 function Section({ id, children }: { id: string; children: React.ReactNode }) {
@@ -134,6 +216,7 @@ function ContentEN() {
           <Li><strong>Saturation</strong> — how vivid the color is, from 0 % (grey) to 100 % (full color).</Li>
           <Li><strong>Lightness</strong> — how bright it is, from 0 % (black) through 50 % (pure color) to 100 % (white).</Li>
         </Ul>
+        <ColorWheel lang="en" />
         <P>
           Once you represent color as an angle, computing harmonies becomes simple geometry: rotate by a fixed number of degrees around the wheel. The five harmonies Zapia offers are each a different rotation pattern.
         </P>
@@ -305,6 +388,7 @@ function ContentFR() {
           <Li><strong>Saturation</strong> — l'intensité de la couleur, de 0 % (gris) à 100 % (couleur pure).</Li>
           <Li><strong>Luminosité</strong> — la clarté, de 0 % (noir) à 50 % (couleur pure) jusqu'à 100 % (blanc).</Li>
         </Ul>
+        <ColorWheel lang="fr" />
         <P>
           Une fois la couleur représentée comme un angle, calculer les harmonies devient une simple géométrie : faire pivoter d'un nombre fixe de degrés autour de la roue. Les cinq harmonies proposées par Zapia correspondent chacune à un schéma de rotation différent.
         </P>
