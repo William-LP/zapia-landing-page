@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import ClientScrollAnchor from "@/components/ClientScrollAnchor";
 import { ArrowLeft, ArrowRight, Clock, Calendar } from "lucide-react";
 import { getDictionary, hasLocale, locales } from "@/app/[lang]/dictionaries";
 import Navbar from "@/components/Navbar";
@@ -200,6 +202,9 @@ export default async function ArticlePage({
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      <Suspense fallback={null}>
+        <ClientScrollAnchor />
+      </Suspense>
       <Navbar t={dict.nav} lang={lang} />
 
       {/* Breadcrumb bar */}
