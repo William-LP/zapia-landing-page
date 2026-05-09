@@ -158,7 +158,7 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
       </aside>
 
       {/* ── Main content ──────────────────────────────────────────── */}
-      <div className="flex-1 min-w-0">
+      <div className="flex-1 min-w-0 bg-slate-50">
         {/* Mobile search + filters */}
         <div className="lg:hidden px-4 pt-6 pb-4 flex flex-col gap-3 border-b border-slate-200 bg-slate-50">
           <div className="relative">
@@ -258,14 +258,15 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
                 key={article.slug.en}
                 className="group flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8 relative cursor-pointer bg-white border border-slate-200 rounded-2xl px-6 py-6 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all"
               >
-                {/* Left: date column (desktop) */}
-                <div className="hidden sm:flex flex-col items-end shrink-0 w-28 pt-1">
+                {/* Left: date + image (desktop) */}
+                <div className="hidden sm:flex flex-col items-end gap-3 shrink-0 w-28">
                   <time
                     dateTime={article.date}
-                    className="text-xs text-slate-400 text-right leading-relaxed"
+                    className="text-xs text-slate-400 text-right leading-relaxed pt-1"
                   >
                     {formatDate(article.date)}
                   </time>
+                  <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-indigo-100 via-slate-100 to-slate-50 border border-slate-200 overflow-hidden" />
                 </div>
 
                 {/* Right: content */}
