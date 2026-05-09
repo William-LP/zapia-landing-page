@@ -17,6 +17,9 @@ import ProfessionalEmailGuideContent, {
 import EmailSignatureGuideContent, {
   toc as signatureToc,
 } from "@/app/[lang]/blog/content/email-signature-guide";
+import PdfOverDocxGuideContent, {
+  toc as pdfToc,
+} from "@/app/[lang]/blog/content/pdf-over-docx-guide";
 
 const BASE_URL = "https://zapia.fr";
 
@@ -108,6 +111,44 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 4,
     },
   ],
+  "why-use-pdf-over-docx": [
+    {
+      slug: {
+        en: "how-to-sign-a-pdf",
+        fr: "comment-signer-un-pdf",
+      },
+      categories: [{ en: "Documents", fr: "Bureautique" }],
+      title: {
+        en: "How to sign a PDF",
+        fr: "Comment signer un PDF",
+      },
+      readTime: 5,
+    },
+    {
+      slug: {
+        en: "how-to-create-a-pdf",
+        fr: "comment-creer-un-pdf",
+      },
+      categories: [{ en: "Documents", fr: "Bureautique" }],
+      title: {
+        en: "How to create a PDF from any application",
+        fr: "Comment créer un PDF depuis n'importe quelle application",
+      },
+      readTime: 4,
+    },
+    {
+      slug: {
+        en: "why-use-a-professional-domain-email",
+        fr: "pourquoi-utiliser-une-adresse-email-professionnelle",
+      },
+      categories: [{ en: "Email", fr: "Email" }],
+      title: {
+        en: "Why @yourcompany.com beats @gmail.com for business",
+        fr: "Pourquoi @votreentreprise.fr vaut mieux que @gmail.com",
+      },
+      readTime: 7,
+    },
+  ],
   "how-to-update-your-email-signature": [
     {
       slug: {
@@ -167,6 +208,10 @@ const contentMap: Record<
   "how-to-update-your-email-signature": {
     component: EmailSignatureGuideContent,
     toc: signatureToc,
+  },
+  "why-use-pdf-over-docx": {
+    component: PdfOverDocxGuideContent,
+    toc: pdfToc,
   },
 };
 

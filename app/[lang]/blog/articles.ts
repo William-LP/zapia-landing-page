@@ -66,6 +66,24 @@ export const articles: Article[] = [
     date: "2025-05-01",
     readTime: 6,
   },
+  {
+    slug: {
+      en: "why-use-pdf-over-docx",
+      fr: "pourquoi-utiliser-le-pdf-plutot-que-docx",
+    },
+    categories: [{ en: "Documents", fr: "Bureautique" }],
+    tags: ["pdf", "word", "docx", "documents", "printing"],
+    title: {
+      en: "Why you should send PDFs instead of Word documents",
+      fr: "Pourquoi envoyer des PDF plutôt que des documents Word",
+    },
+    excerpt: {
+      en: "Word files look different on every computer. PDFs don't. Here's why PDF is the right format for anything you consider final — and what you risk by sending .docx.",
+      fr: "Un fichier Word s'affiche différemment sur chaque ordinateur. Un PDF, non. Voici pourquoi le PDF est le bon format pour tout document finalisé — et ce que vous risquez en envoyant du .docx.",
+    },
+    date: "2025-05-01",
+    readTime: 7,
+  },
 ];
 
 export const allCategories = (lang: "en" | "fr") =>
