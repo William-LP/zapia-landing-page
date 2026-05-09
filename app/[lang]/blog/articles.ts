@@ -6,6 +6,7 @@ export type Article = {
   excerpt: { en: string; fr: string };
   date: string;
   readTime: number;
+  coverImage?: string;
 };
 
 export const articles: Article[] = [
@@ -26,6 +27,7 @@ export const articles: Article[] = [
     },
     date: "2025-04-29",
     readTime: 7,
+    coverImage: "/blog/why-use-a-professional-domain-email/email pro.png",
   },
   {
     slug: {
@@ -83,6 +85,42 @@ export const articles: Article[] = [
     },
     date: "2025-05-01",
     readTime: 7,
+  },
+  {
+    slug: {
+      en: "how-to-create-a-pdf",
+      fr: "comment-creer-un-pdf",
+    },
+    categories: [{ en: "Documents", fr: "Bureautique" }],
+    tags: ["pdf", "documents", "tutorial"],
+    title: {
+      en: "How to create a PDF from any application",
+      fr: "Comment créer un PDF depuis n'importe quelle application",
+    },
+    excerpt: {
+      en: "You don't need special software to create a PDF. Every major platform has a built-in way to export any document, webpage, or image as a PDF — here's how to do it on Windows, macOS, and in the most common apps.",
+      fr: "Vous n'avez pas besoin d'un logiciel spécial pour créer un PDF. Chaque plateforme majeure dispose d'un moyen intégré d'exporter n'importe quel document, page web ou image en PDF — voici comment faire sur Windows, macOS et dans les applications les plus courantes.",
+    },
+    date: "2025-05-02",
+    readTime: 5,
+  },
+  {
+    slug: {
+      en: "how-to-sign-a-pdf",
+      fr: "comment-signer-un-pdf",
+    },
+    categories: [{ en: "Documents", fr: "Bureautique" }],
+    tags: ["pdf", "signature", "documents"],
+    title: {
+      en: "How to sign a PDF (on any device)",
+      fr: "Comment signer un PDF (sur n'importe quel appareil)",
+    },
+    excerpt: {
+      en: "Signing a PDF doesn't require printing it out. Whether you're on a Mac, Windows PC, iPhone, or Android, there's a built-in or free tool that lets you add your signature in under a minute.",
+      fr: "Signer un PDF ne nécessite pas de l'imprimer. Que vous soyez sur Mac, PC Windows, iPhone ou Android, il existe un outil intégré ou gratuit qui vous permet d'ajouter votre signature en moins d'une minute.",
+    },
+    date: "2025-05-02",
+    readTime: 6,
   },
 ];
 

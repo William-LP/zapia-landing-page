@@ -20,6 +20,12 @@ import EmailSignatureGuideContent, {
 import PdfOverDocxGuideContent, {
   toc as pdfToc,
 } from "@/app/[lang]/blog/content/pdf-over-docx-guide";
+import CreatePdfGuideContent, {
+  toc as createPdfToc,
+} from "@/app/[lang]/blog/content/create-pdf-guide";
+import SignPdfGuideContent, {
+  toc as signPdfToc,
+} from "@/app/[lang]/blog/content/sign-pdf-guide";
 
 const BASE_URL = "https://zapia.fr";
 
@@ -149,6 +155,82 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 7,
     },
   ],
+  "how-to-create-a-pdf": [
+    {
+      slug: {
+        en: "how-to-sign-a-pdf",
+        fr: "comment-signer-un-pdf",
+      },
+      categories: [{ en: "Documents", fr: "Bureautique" }],
+      title: {
+        en: "How to sign a PDF (on any device)",
+        fr: "Comment signer un PDF (sur n'importe quel appareil)",
+      },
+      readTime: 6,
+    },
+    {
+      slug: {
+        en: "why-use-pdf-over-docx",
+        fr: "pourquoi-utiliser-le-pdf-plutot-que-docx",
+      },
+      categories: [{ en: "Documents", fr: "Bureautique" }],
+      title: {
+        en: "Why you should send PDFs instead of Word documents",
+        fr: "Pourquoi envoyer des PDF plutôt que des documents Word",
+      },
+      readTime: 7,
+    },
+    {
+      slug: {
+        en: "why-use-a-professional-domain-email",
+        fr: "pourquoi-utiliser-une-adresse-email-professionnelle",
+      },
+      categories: [{ en: "Email", fr: "Email" }],
+      title: {
+        en: "Why @yourcompany.com beats @gmail.com for business",
+        fr: "Pourquoi @votreentreprise.fr vaut mieux que @gmail.com",
+      },
+      readTime: 7,
+    },
+  ],
+  "how-to-sign-a-pdf": [
+    {
+      slug: {
+        en: "how-to-create-a-pdf",
+        fr: "comment-creer-un-pdf",
+      },
+      categories: [{ en: "Documents", fr: "Bureautique" }],
+      title: {
+        en: "How to create a PDF from any application",
+        fr: "Comment créer un PDF depuis n'importe quelle application",
+      },
+      readTime: 5,
+    },
+    {
+      slug: {
+        en: "why-use-pdf-over-docx",
+        fr: "pourquoi-utiliser-le-pdf-plutot-que-docx",
+      },
+      categories: [{ en: "Documents", fr: "Bureautique" }],
+      title: {
+        en: "Why you should send PDFs instead of Word documents",
+        fr: "Pourquoi envoyer des PDF plutôt que des documents Word",
+      },
+      readTime: 7,
+    },
+    {
+      slug: {
+        en: "why-use-a-professional-domain-email",
+        fr: "pourquoi-utiliser-une-adresse-email-professionnelle",
+      },
+      categories: [{ en: "Email", fr: "Email" }],
+      title: {
+        en: "Why @yourcompany.com beats @gmail.com for business",
+        fr: "Pourquoi @votreentreprise.fr vaut mieux que @gmail.com",
+      },
+      readTime: 7,
+    },
+  ],
   "how-to-update-your-email-signature": [
     {
       slug: {
@@ -212,6 +294,14 @@ const contentMap: Record<
   "why-use-pdf-over-docx": {
     component: PdfOverDocxGuideContent,
     toc: pdfToc,
+  },
+  "how-to-create-a-pdf": {
+    component: CreatePdfGuideContent,
+    toc: createPdfToc,
+  },
+  "how-to-sign-a-pdf": {
+    component: SignPdfGuideContent,
+    toc: signPdfToc,
   },
 };
 

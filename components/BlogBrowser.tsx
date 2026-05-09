@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Search, ArrowRight, Clock, X, BookOpen, FileText } from "lucide-react";
 import type { Article } from "@/app/[lang]/blog/articles";
@@ -266,7 +267,19 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
                   >
                     {formatDate(article.date)}
                   </time>
-                  <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-indigo-100 via-slate-100 to-slate-50 border border-slate-200 overflow-hidden" />
+                  {article.coverImage ? (
+                    <div className="w-28 h-28 rounded-2xl border border-slate-200 overflow-hidden shrink-0">
+                      <Image
+                        src={article.coverImage}
+                        alt=""
+                        width={112}
+                        height={112}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-28 h-28 rounded-2xl bg-linear-to-br from-indigo-100 via-slate-100 to-slate-50 border border-slate-200 overflow-hidden" />
+                  )}
                 </div>
 
                 {/* Right: content */}
