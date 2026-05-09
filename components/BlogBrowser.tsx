@@ -229,7 +229,7 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
         </div>
 
         {/* Articles list */}
-        <div className="px-6 lg:px-10 pb-20 flex flex-col divide-y divide-slate-100">
+        <div className="px-6 lg:px-10 pb-20 flex flex-col gap-4 pt-2">
           {filtered.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-24 text-center">
               <div className="w-16 h-16 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center mb-5">
@@ -256,7 +256,7 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
             filtered.map((article) => (
               <article
                 key={article.slug.en}
-                className="group py-7 flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8 relative cursor-pointer"
+                className="group flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8 relative cursor-pointer bg-white border border-slate-200 rounded-2xl px-6 py-6 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all"
               >
                 {/* Left: date column (desktop) */}
                 <div className="hidden sm:flex flex-col items-end shrink-0 w-28 pt-1">
