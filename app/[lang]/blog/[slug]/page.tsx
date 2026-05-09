@@ -12,12 +12,15 @@ import DomainNameGuideContent, {
 import ProfessionalEmailGuideContent, {
   toc as emailToc,
 } from "@/app/[lang]/blog/content/professional-email-guide";
+import EmailSignatureGuideContent, {
+  toc as signatureToc,
+} from "@/app/[lang]/blog/content/email-signature-guide";
 
 const BASE_URL = "https://zapia.fr";
 
 type RelatedArticle = {
   slug: string;
-  category: { en: string; fr: string };
+  categories: { en: string; fr: string }[];
   title: { en: string; fr: string };
   readTime: number;
 };
@@ -26,7 +29,7 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
   "how-to-choose-the-right-domain-name": [
     {
       slug: "why-use-a-professional-domain-email",
-      category: { en: "Email", fr: "Email" },
+      categories: [{ en: "Email", fr: "Email" }],
       title: {
         en: "Why @yourcompany.com beats @gmail.com for business",
         fr: "Pourquoi @votreentreprise.fr vaut mieux que @gmail.com",
@@ -35,7 +38,7 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
     },
     {
       slug: "how-to-transfer-your-domain-without-losing-seo",
-      category: { en: "Domains", fr: "Domaines" },
+      categories: [{ en: "Domains", fr: "Domaines" }],
       title: {
         en: "How to transfer your domain without losing your SEO",
         fr: "Comment transférer votre domaine sans perdre votre référencement",
@@ -44,7 +47,7 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
     },
     {
       slug: "5-signs-your-website-is-hurting-your-credibility",
-      category: { en: "Digital presence", fr: "Présence numérique" },
+      categories: [{ en: "Digital presence", fr: "Présence numérique" }],
       title: {
         en: "5 signs your website is hurting your credibility",
         fr: "5 signes que votre site web nuit à votre crédibilité",
@@ -54,8 +57,20 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
   ],
   "why-use-a-professional-domain-email": [
     {
+      slug: "how-to-update-your-email-signature",
+      categories: [
+        { en: "Email", fr: "Email" },
+        { en: "Tutorial", fr: "Tutoriel" },
+      ],
+      title: {
+        en: "How to update your email signature (Gmail, Outlook, Thunderbird)",
+        fr: "Comment modifier sa signature email (Gmail, Outlook, Thunderbird)",
+      },
+      readTime: 6,
+    },
+    {
       slug: "how-to-choose-the-right-domain-name",
-      category: { en: "Domains", fr: "Domaines" },
+      categories: [{ en: "Domains", fr: "Domaines" }],
       title: {
         en: "How to choose the right domain name for your business",
         fr: "Comment choisir le bon nom de domaine pour votre entreprise",
@@ -63,22 +78,42 @@ const relatedBySlug: Record<string, RelatedArticle[]> = {
       readTime: 8,
     },
     {
-      slug: "how-to-transfer-your-domain-without-losing-seo",
-      category: { en: "Domains", fr: "Domaines" },
-      title: {
-        en: "How to transfer your domain without losing your SEO",
-        fr: "Comment transférer votre domaine sans perdre votre référencement",
-      },
-      readTime: 6,
-    },
-    {
       slug: "5-signs-your-website-is-hurting-your-credibility",
-      category: { en: "Digital presence", fr: "Présence numérique" },
+      categories: [{ en: "Digital presence", fr: "Présence numérique" }],
       title: {
         en: "5 signs your website is hurting your credibility",
         fr: "5 signes que votre site web nuit à votre crédibilité",
       },
       readTime: 4,
+    },
+  ],
+  "how-to-update-your-email-signature": [
+    {
+      slug: "why-use-a-professional-domain-email",
+      categories: [{ en: "Email", fr: "Email" }],
+      title: {
+        en: "Why @yourcompany.com beats @gmail.com for business",
+        fr: "Pourquoi @votreentreprise.fr vaut mieux que @gmail.com",
+      },
+      readTime: 7,
+    },
+    {
+      slug: "how-to-choose-the-right-domain-name",
+      categories: [{ en: "Domains", fr: "Domaines" }],
+      title: {
+        en: "How to choose the right domain name for your business",
+        fr: "Comment choisir le bon nom de domaine pour votre entreprise",
+      },
+      readTime: 8,
+    },
+    {
+      slug: "how-to-set-up-spf-dkim-records",
+      categories: [{ en: "Email", fr: "Email" }],
+      title: {
+        en: "How to set up SPF and DKIM records for your domain",
+        fr: "Comment configurer les enregistrements SPF et DKIM de votre domaine",
+      },
+      readTime: 7,
     },
   ],
 };
@@ -97,6 +132,10 @@ const contentMap: Record<
   "why-use-a-professional-domain-email": {
     component: ProfessionalEmailGuideContent,
     toc: emailToc,
+  },
+  "how-to-update-your-email-signature": {
+    component: EmailSignatureGuideContent,
+    toc: signatureToc,
   },
 };
 
@@ -183,9 +222,14 @@ export default async function ArticlePage({
             {/* Header */}
             <header className="mb-10 pb-10 border-b border-slate-100">
               <div className="flex flex-wrap items-center gap-3 mb-5">
-                <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-medium">
-                  {article.category[lang]}
-                </span>
+                {article.categories.map((cat) => (
+                  <span
+                    key={cat.en}
+                    className="inline-flex items-center px-2.5 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-medium"
+                  >
+                    {cat[lang]}
+                  </span>
+                ))}
                 <span className="flex items-center gap-1.5 text-xs text-slate-400">
                   <Calendar className="w-3.5 h-3.5" />
                   {formattedDate}
@@ -247,10 +291,17 @@ export default async function ArticlePage({
                   className="group flex flex-col gap-3 p-6 bg-white rounded-2xl border border-slate-200 hover:border-indigo-200 hover:shadow-sm transition-all"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-medium">
-                      {r.category[lang]}
-                    </span>
-                    <span className="flex items-center gap-1 text-xs text-slate-400">
+                    <div className="flex flex-wrap gap-1.5">
+                      {r.categories.map((cat) => (
+                        <span
+                          key={cat.en}
+                          className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-medium"
+                        >
+                          {cat[lang]}
+                        </span>
+                      ))}
+                    </div>
+                    <span className="flex items-center gap-1 text-xs text-slate-400 shrink-0 ml-2">
                       <Clock className="w-3 h-3" />
                       {r.readTime} {lang === "fr" ? "min" : "min read"}
                     </span>

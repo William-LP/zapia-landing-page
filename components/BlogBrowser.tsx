@@ -32,13 +32,14 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
     const q = search.toLowerCase().trim();
     return articles.filter((a) => {
       const matchesCategory =
-        !activeCategory || a.category[lang] === activeCategory;
+        !activeCategory ||
+        a.categories.some((c) => c[lang] === activeCategory);
       const matchesSearch =
         !q ||
         a.title[lang].toLowerCase().includes(q) ||
         a.excerpt[lang].toLowerCase().includes(q) ||
         a.tags.some((tag) => tag.toLowerCase().includes(q)) ||
-        a.category[lang].toLowerCase().includes(q);
+        a.categories.some((c) => c[lang].toLowerCase().includes(q));
       return matchesCategory && matchesSearch;
     });
   }, [articles, lang, search, activeCategory]);
@@ -109,8 +110,8 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
               </button>
 
               {categories.map((cat) => {
-                const count = articles.filter(
-                  (a) => a.category[lang] === cat
+                const count = articles.filter((a) =>
+                  a.categories.some((c) => c[lang] === cat)
                 ).length;
                 return (
                   <button
@@ -270,9 +271,14 @@ export default function BlogBrowser({ articles, categories, lang, t }: Props) {
                 {/* Right: content */}
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-2 mb-3">
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-medium">
-                      {article.category[lang]}
-                    </span>
+                    {article.categories.map((cat) => (
+                      <span
+                        key={cat.en}
+                        className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-medium"
+                      >
+                        {cat[lang]}
+                      </span>
+                    ))}
                     <span className="flex items-center gap-1 text-xs text-slate-400">
                       <Clock className="w-3 h-3" />
                       {article.readTime} {t.min_read}

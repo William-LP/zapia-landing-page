@@ -194,7 +194,7 @@ function ContentEN() {
           Every email you send is a touchpoint. With a branded domain, every
           touchpoint reinforces your company name. Recipients see{" "}
           <em>hello@yourcompany.com</em> in their inbox, and they see{" "}
-          <em>follicare</em> again. Over time, this compounds.
+          <em>yourcompany</em> again. Over time, this compounds.
         </P>
         <Ul>
           <Li>
@@ -353,8 +353,8 @@ function ContentEN() {
           it creates an impression of solidity and intentionality.
         </P>
         <Comparison
-          bad="website: follicare.com — email: yourcompany@gmail.com"
-          good="website: follicare.com — email: hello@yourcompany.com"
+          bad="website: yourcompany.com — email: yourcompany@gmail.com"
+          good="website: yourcompany.com — email: hello@yourcompany.com"
         />
         <P>
           The mismatched version creates a small but real cognitive friction.
@@ -369,7 +369,7 @@ function ContentEN() {
         <P>
           A branded domain email makes it far easier for customers to verify
           they're communicating with you. If all your official communication
-          comes from <em>@follicare.com</em>, anything that doesn't is
+          comes from <em>@yourcompany.com</em>, anything that doesn't is
           immediately suspicious.
         </P>
         <Ul>
@@ -483,7 +483,7 @@ function ContentFR() {
           Chaque email que vous envoyez est un point de contact. Avec un domaine
           personnalisé, chaque contact renforce votre nom d'entreprise. Vos
           destinataires voient <em>hello@yourcompany.com</em> dans leur boîte, et
-          ils voient <em>follicare</em> à nouveau. À la longue, cela se cumule.
+          ils voient <em>yourcompany</em> à nouveau. À la longue, cela se cumule.
         </P>
         <Ul>
           <Li>
@@ -654,8 +654,8 @@ function ContentFR() {
           d'intentionnalité.
         </P>
         <Comparison
-          bad="site : follicare.com — email : yourcompany@gmail.com"
-          good="site : follicare.com — email : hello@yourcompany.com"
+          bad="site : yourcompany.com — email : yourcompany@gmail.com"
+          good="site : yourcompany.com — email : hello@yourcompany.com"
         />
         <P>
           La version incohérente crée une friction cognitive faible mais réelle.
@@ -670,7 +670,7 @@ function ContentFR() {
         <P>
           Une adresse email au nom de domaine permet à vos clients de vérifier
           beaucoup plus facilement qu'ils communiquent bien avec vous. Si toute
-          votre communication officielle provient de <em>@follicare.com</em>,
+          votre communication officielle provient de <em>@yourcompany.com</em>,
           tout ce qui n'en provient pas est immédiatement suspect.
         </P>
         <Ul>

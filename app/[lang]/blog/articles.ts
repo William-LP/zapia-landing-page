@@ -1,6 +1,6 @@
 export type Article = {
   slug: string;
-  category: { en: string; fr: string };
+  categories: { en: string; fr: string }[];
   tags: string[];
   title: { en: string; fr: string };
   excerpt: { en: string; fr: string };
@@ -11,7 +11,7 @@ export type Article = {
 export const articles: Article[] = [
   {
     slug: "why-use-a-professional-domain-email",
-    category: { en: "Email", fr: "Email" },
+    categories: [{ en: "Email", fr: "Email" }],
     tags: ["email", "branding", "deliverability"],
     title: {
       en: "Why @yourcompany.com beats @gmail.com for business",
@@ -26,7 +26,7 @@ export const articles: Article[] = [
   },
   {
     slug: "how-to-choose-the-right-domain-name",
-    category: { en: "Domains", fr: "Domaines" },
+    categories: [{ en: "Domains", fr: "Domaines" }],
     tags: ["domain", "branding", "email"],
     title: {
       en: "How to Choose the Right Domain Name for Your Business",
@@ -39,7 +39,27 @@ export const articles: Article[] = [
     date: "2025-04-29",
     readTime: 8,
   },
+  {
+    slug: "how-to-update-your-email-signature",
+    categories: [
+      { en: "Email", fr: "Email" },
+      { en: "Tutorial", fr: "Tutoriel" },
+    ],
+    tags: ["email", "signature", "outlook", "gmail", "thunderbird"],
+    title: {
+      en: "How to update your email signature (Gmail, Outlook, Thunderbird)",
+      fr: "Comment modifier sa signature email (Gmail, Outlook, Thunderbird)",
+    },
+    excerpt: {
+      en: "A step-by-step guide to updating your email signature in the most common email clients — no technical knowledge required.",
+      fr: "Un guide pas à pas pour modifier votre signature email dans les principaux clients de messagerie — aucune connaissance technique requise.",
+    },
+    date: "2025-05-01",
+    readTime: 6,
+  },
 ];
 
 export const allCategories = (lang: "en" | "fr") =>
-  Array.from(new Set(articles.map((a) => a.category[lang])));
+  Array.from(
+    new Set(articles.flatMap((a) => a.categories.map((c) => c[lang])))
+  );
