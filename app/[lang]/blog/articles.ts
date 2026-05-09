@@ -55,7 +55,7 @@ export const articles: Article[] = [
     },
     categories: [
       { en: "Email", fr: "Email" },
-      { en: "Tutorial", fr: "Tutoriel" },
+      { en: "Tutorials", fr: "Tutoriels" },
     ],
     tags: ["email", "signature", "outlook", "gmail", "thunderbird"],
     title: {
@@ -93,7 +93,7 @@ export const articles: Article[] = [
       en: "how-to-create-a-pdf",
       fr: "comment-creer-un-pdf",
     },
-    categories: [{ en: "Documents", fr: "Bureautique" }],
+    categories: [{ en: "Productivity Software", fr: "Bureautique" }],
     tags: ["pdf", "documents", "tutorial"],
     title: {
       en: "How to create a PDF from any application",
